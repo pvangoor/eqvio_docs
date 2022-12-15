@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,10 @@ Public Member Functions</h2></td></tr>
 const Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEqFCoordinateSuite.html#ab0552bf569f37ce010baa355ddd06f68">outputMatrixC</a> (const <a class="el" href="structVIOState.html">VIOState</a> &amp;xi0, const <a class="el" href="structVIOGroup.html">VIOGroup</a> &amp;X, const <a class="el" href="structVisionMeasurement.html">VisionMeasurement</a> &amp;y, const bool useEquivariance=true) const</td></tr>
 <tr class="memdesc:ab0552bf569f37ce010baa355ddd06f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output matrix with equivariance \( C_t^\star \) or without \( C_t \). <br /></td></tr>
 <tr class="separator:ab0552bf569f37ce010baa355ddd06f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a581f1f50ce27119aa935c81003e2f299"><td class="memItemLeft" align="right" valign="top"><a id="a581f1f50ce27119aa935c81003e2f299"></a>
+Eigen::MatrixXd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEqFCoordinateSuite.html#a581f1f50ce27119aa935c81003e2f299">stateMatrixADiscrete</a> (const <a class="el" href="structVIOGroup.html">VIOGroup</a> &amp;X, const <a class="el" href="structVIOState.html">VIOState</a> &amp;xi0, const <a class="el" href="structIMUVelocity.html">IMUVelocity</a> &amp;imuVel, const double &amp;dt) const</td></tr>
+<tr class="memdesc:a581f1f50ce27119aa935c81003e2f299"><td class="mdescLeft">&#160;</td><td class="mdescRight">The discrete EqF state transition matrix. <br /></td></tr>
+<tr class="separator:a581f1f50ce27119aa935c81003e2f299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41aa5ec362eb71093e5b2e1e1f79275e"><td class="memItemLeft" align="right" valign="top"><a id="a41aa5ec362eb71093e5b2e1e1f79275e"></a>
 const Eigen::Matrix&lt; double, 2, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEqFCoordinateSuite.html#a41aa5ec362eb71093e5b2e1e1f79275e">outputMatrixCi</a> (const Eigen::Vector3d &amp;q0, const liepp::SOT3d &amp;QHat, const GIFT::GICameraPtr &amp;camPtr) const</td></tr>
 <tr class="memdesc:a41aa5ec362eb71093e5b2e1e1f79275e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The standard (not equivariant) output matrix block \( C_i \). <br /></td></tr>
@@ -161,8 +165,8 @@ const std::function&lt; Eigen::Matrix&lt; double, 2, 3 &gt; const Eigen::Vector3
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>include/eqvio/<a class="el" href="EqFMatrices_8h_source.html">EqFMatrices.h</a></li>
-<li>src/EqFMatrices.cpp</li>
+<li>include/eqvio/mathematical/<a class="el" href="EqFMatrices_8h_source.html">EqFMatrices.h</a></li>
+<li>src/mathematical/EqFMatrices.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

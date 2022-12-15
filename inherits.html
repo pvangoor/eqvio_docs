@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,10 @@ $(function() {
 </td></tr>
 <tr><td><img src="inherit_graph_6.png" border="0" usemap="#DataServerBase" alt=""/>
 <map name="DataServerBase" id="DataServerBase">
-<area shape="rect" href="classDataServerBase.html" title="The common interface of data servers." alt="" coords="5,31,132,57"/>
-<area shape="rect" href="classSimpleDataServer.html" title="The simplest implementation of a data server." alt="" coords="188,5,328,32"/>
-<area shape="rect" href="classThreadedDataServer.html" title="A threaded implementation of a data server." alt="" coords="180,56,336,83"/>
+<area shape="rect" href="classDataServerBase.html" title="The common interface of data servers." alt="" coords="5,56,132,83"/>
+<area shape="rect" href="classSimpleDataServer.html" title="The simplest implementation of a data server." alt="" coords="193,5,333,32"/>
+<area shape="rect" href="classSimulationDataServer.html" title="A data server that provides purely simulated data." alt="" coords="180,56,345,83"/>
+<area shape="rect" href="classThreadedDataServer.html" title="A threaded implementation of a data server." alt="" coords="185,107,341,133"/>
 </map>
 </td></tr>
 <tr><td><img src="inherit_graph_7.png" border="0" usemap="#DatasetReaderBase" alt=""/>
@@ -161,54 +162,64 @@ $(function() {
 <area shape="rect" href="structStampedPose.html" title="A struct with a time stamp and SE(3) pose." alt="" coords="5,5,116,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_16.png" border="0" usemap="#VIOAlgebra" alt=""/>
+<tr><td><img src="inherit_graph_16.png" border="0" usemap="#VIO__eqf" alt=""/>
+<map name="VIO__eqf" id="VIO__eqf">
+<area shape="rect" href="structVIO__eqf.html" title="The implementation of the EqF for VIO." alt="" coords="5,5,79,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_17.png" border="0" usemap="#VIOAlgebra" alt=""/>
 <map name="VIOAlgebra" id="VIOAlgebra">
 <area shape="rect" href="structVIOAlgebra.html" title="The Lie algebra of the VIOGroup." alt="" coords="5,5,100,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_17.png" border="0" usemap="#VIOFilter" alt=""/>
+<tr><td><img src="inherit_graph_18.png" border="0" usemap="#VIOFilter" alt=""/>
 <map name="VIOFilter" id="VIOFilter">
 <area shape="rect" href="classVIOFilter.html" title="The implementation of the EqF for VIO." alt="" coords="5,5,83,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_18.png" border="0" usemap="#VIOFilter_1_1Settings" alt=""/>
+<tr><td><img src="inherit_graph_19.png" border="0" usemap="#VIOFilter_1_1Settings" alt=""/>
 <map name="VIOFilter_1_1Settings" id="VIOFilter_1_1Settings">
 <area shape="rect" href="structVIOFilter_1_1Settings.html" title="The settings of the EqF for VIO." alt="" coords="5,5,144,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_19.png" border="0" usemap="#VIOGroup" alt=""/>
+<tr><td><img src="inherit_graph_20.png" border="0" usemap="#VIOGroup" alt=""/>
 <map name="VIOGroup" id="VIOGroup">
 <area shape="rect" href="structVIOGroup.html" title="The Lie group used for VIO." alt="" coords="5,5,89,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_20.png" border="0" usemap="#VIOSensorState" alt=""/>
+<tr><td><img src="inherit_graph_21.png" border="0" usemap="#VIOSensorState" alt=""/>
 <map name="VIOSensorState" id="VIOSensorState">
 <area shape="rect" href="structVIOSensorState.html" title="The states of the sensors of the VIO system." alt="" coords="5,5,128,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_21.png" border="0" usemap="#VIOSimulator" alt=""/>
+<tr><td><img src="inherit_graph_22.png" border="0" usemap="#VIOSimulator" alt=""/>
 <map name="VIOSimulator" id="VIOSimulator">
 <area shape="rect" href="classVIOSimulator.html" title="A simulator for VIO measurements from a given groundtruth trajectory." alt="" coords="5,5,113,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_22.png" border="0" usemap="#VIOState" alt=""/>
+<tr><td><img src="inherit_graph_23.png" border="0" usemap="#VIOState" alt=""/>
 <map name="VIOState" id="VIOState">
 <area shape="rect" href="structVIOState.html" title="The states of the VIO system." alt="" coords="5,5,84,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_23.png" border="0" usemap="#VIOVisualiser" alt=""/>
+<tr><td><img src="inherit_graph_24.png" border="0" usemap="#VIOVisualiser" alt=""/>
 <map name="VIOVisualiser" id="VIOVisualiser">
 <area shape="rect" href="classVIOVisualiser.html" title="A class to handle visualisation of VIO state." alt="" coords="5,5,115,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_24.png" border="0" usemap="#VIOWriter" alt=""/>
+<tr><td><img src="inherit_graph_25.png" border="0" usemap="#VIOWriter" alt=""/>
 <map name="VIOWriter" id="VIOWriter">
 <area shape="rect" href="classVIOWriter.html" title="A class to handle writing output for the VIO system." alt="" coords="5,5,91,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_25.png" border="0" usemap="#VisionMeasurement" alt=""/>
+<tr><td><img src="inherit_graph_26.png" border="0" usemap="#VisionMeasurement" alt=""/>
 <map name="VisionMeasurement" id="VisionMeasurement">
 <area shape="rect" href="structVisionMeasurement.html" title="A measurement of features from an image." alt="" coords="5,5,157,32"/>
+</map>
+</td></tr>
+<tr><td><img src="inherit_graph_27.png" border="0" usemap="#YAML_1_1convert_3_01liepp_1_1SE3d_01_4" alt=""/>
+<map name="YAML_1_1convert_3_01liepp_1_1SE3d_01_4" id="YAML_1_1convert_3_01liepp_1_1SE3d_01_4">
+<area shape="rect" href="structYAML_1_1convert_3_01liepp_1_1SE3d_01_4.html" title=" " alt="" coords="5,5,168,47"/>
 </map>
 </td></tr>
 </table>

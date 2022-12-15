@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -73,10 +73,13 @@ $(function() {
 
 <h3><a id="index_g"></a>- g -</h3><ul>
 <li>generateWorldPoints()
-: <a class="el" href="classVIOSimulator.html#a25b4f55b65d46918c2446c93390e2327">VIOSimulator</a>
+: <a class="el" href="classVIOSimulator.html#a0e10c0da7f03b328841d70fa7996b591">VIOSimulator</a>
 </li>
 <li>getFeaturePredictions()
 : <a class="el" href="classVIOFilter.html#a523e1fe804a5b79cd3c2a0fb569a2ce5">VIOFilter</a>
+</li>
+<li>getFullState()
+: <a class="el" href="classVIOSimulator.html#a8792d79db8e24a44bd3640e84a895e46">VIOSimulator</a>
 </li>
 <li>getIds()
 : <a class="el" href="structVIOState.html#adb494811207ced2ecaf4e1bd11f5c652">VIOState</a>
@@ -85,16 +88,21 @@ $(function() {
 <li>getImage()
 : <a class="el" href="classDataServerBase.html#a933a15afcc135987dfd2fcad8f10e334">DataServerBase</a>
 , <a class="el" href="classSimpleDataServer.html#a31b491ee5c41b025b82675558b1763f2">SimpleDataServer</a>
+, <a class="el" href="classSimulationDataServer.html#a42a9aee2c4c40a034e05634565892e57">SimulationDataServer</a>
 , <a class="el" href="classThreadedDataServer.html#a4957215f99b28213f4d5f2752b0c1102">ThreadedDataServer</a>
 </li>
 <li>getIMU()
 : <a class="el" href="classDataServerBase.html#a563b50dcc1e250d1ce364717a8e6d295">DataServerBase</a>
 , <a class="el" href="classSimpleDataServer.html#ae12c36d500a0989887d6e3f1f9b2c581">SimpleDataServer</a>
+, <a class="el" href="classSimulationDataServer.html#afa696750a45d652c22979c7ecd754f1f">SimulationDataServer</a>
 , <a class="el" href="classThreadedDataServer.html#a450874729afa04053e1534e72c91022b">ThreadedDataServer</a>
-, <a class="el" href="classVIOSimulator.html#a1d80cc33cdcc21c93dddd3a29b1d2b79">VIOSimulator</a>
+, <a class="el" href="classVIOSimulator.html#af13bec4d8b8b2d55ae12915cb1212d84">VIOSimulator</a>
+</li>
+<li>getInitialCondition()
+: <a class="el" href="classSimulationDataServer.html#a2cd6610fa417d08e75fb0be9367ebff7">SimulationDataServer</a>
 </li>
 <li>getLandmarkCovById()
-: <a class="el" href="classVIOFilter.html#ad11c108ee337f3a366171bfefbe366c9">VIOFilter</a>
+: <a class="el" href="structVIO__eqf.html#a272782b3916a6be6eacc9cbed5a90b29">VIO_eqf</a>
 </li>
 <li>getLoopTimingData()
 : <a class="el" href="classLoopTimer.html#a9a9061b25a9d8a7b80e539e843527173">LoopTimer</a>
@@ -103,22 +111,37 @@ $(function() {
 : <a class="el" href="classVIOFilter.html#a4cc8b00174627c85f619004143ca55b9">VIOFilter</a>
 </li>
 <li>getOutputCovById()
-: <a class="el" href="classVIOFilter.html#a9a8d0fb170bf4ecd2e4e0e4611eddc84">VIOFilter</a>
+: <a class="el" href="structVIO__eqf.html#a89b5d3004c6ce13fb69f2919cada5e61">VIO_eqf</a>
 </li>
 <li>getSimIMU()
 : <a class="el" href="classDataServerBase.html#a68e2285638296b73c450d7d0dd3fe07d">DataServerBase</a>
+, <a class="el" href="classSimulationDataServer.html#a05ed32c3dce805400fa7136c96f5a633">SimulationDataServer</a>
 </li>
 <li>getSimVision()
 : <a class="el" href="classDataServerBase.html#ae54100ae31939fc68ab7f630038639f7">DataServerBase</a>
+, <a class="el" href="classSimulationDataServer.html#ac3f041b59aa65f4ae735b76b7df92098">SimulationDataServer</a>
 </li>
 <li>getTime()
 : <a class="el" href="classVIOFilter.html#a8706a7ab61bfde3e717253f455aa591d">VIOFilter</a>
+</li>
+<li>getTrueState()
+: <a class="el" href="classSimulationDataServer.html#a3e091fb09e02ef4db90fa810b68a5947">SimulationDataServer</a>
 </li>
 <li>getVision()
 : <a class="el" href="classVIOSimulator.html#a28a381619621dac6f870f54b8561cfe0">VIOSimulator</a>
 </li>
 <li>gravityDir()
 : <a class="el" href="structVIOSensorState.html#ab43bbc981fc0a84edf36c1752e3890ba">VIOSensorState</a>
+</li>
+<li>groundtruth()
+: <a class="el" href="classAPDatasetReader.html#ad2680014106b408f38a0676113ebee86">APDatasetReader</a>
+, <a class="el" href="classASLDatasetReader.html#ab70da63d915a0867d18be6229c095267">ASLDatasetReader</a>
+, <a class="el" href="classDatasetReaderBase.html#a7527439f05953efbffa1a1f0b8accf4b">DatasetReaderBase</a>
+, <a class="el" href="classUZHFPVDatasetReader.html#ab2d849f39f855bd81756546b8e3d3436">UZHFPVDatasetReader</a>
+</li>
+<li>groundtruthFileName
+: <a class="el" href="classAPDatasetReader.html#acee7ac9afd60b889fec369cf50514d4d">APDatasetReader</a>
+, <a class="el" href="classASLDatasetReader.html#a363acbe2a27882d6eb6b19c31f79a348">ASLDatasetReader</a>
 </li>
 <li>gyr
 : <a class="el" href="structIMUVelocity.html#a90df9bbde5a04bd50d514fb619ef8e22">IMUVelocity</a>

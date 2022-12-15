@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -76,20 +76,24 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classVIOSimulator.html">VIOSimulator</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#af754aca9ccfdec1bcfa8e07fd6906631">cameraOffset</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classVIOSimulator.html#a8df29e54846fd455e82bf6421611b0f2">currentTrackingId</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#af0f86da7206d2cb791042f2f93937433">fieldOfView</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classVIOSimulator.html#a25b4f55b65d46918c2446c93390e2327">generateWorldPoints</a>(const int num=1000, const double distance=1.0) const</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#a1d80cc33cdcc21c93dddd3a29b1d2b79">getIMU</a>(const double &amp;time) const</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#af754aca9ccfdec1bcfa8e07fd6906631">cameraOffset</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>cameraPtr</b> (defined in <a class="el" href="classVIOSimulator.html">VIOSimulator</a>)</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>filterSettings</b> (defined in <a class="el" href="classVIOSimulator.html">VIOSimulator</a>)</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classVIOSimulator.html#a0e10c0da7f03b328841d70fa7996b591">generateWorldPoints</a>(const int num=1000, const double distance=1.0, const int numWalls=1) const</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#a8792d79db8e24a44bd3640e84a895e46">getFullState</a>(const double &amp;time=-1, const bool &amp;allowNoise=false) const</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classVIOSimulator.html#af13bec4d8b8b2d55ae12915cb1212d84">getIMU</a>(const double &amp;time, const double &amp;samplingFrequency=-1) const</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getInertialStates</b>(std::vector&lt; StampedPose &gt;::const_iterator it, const double &amp;ct) const (defined in <a class="el" href="classVIOSimulator.html">VIOSimulator</a>)</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classVIOSimulator.html#a28a381619621dac6f870f54b8561cfe0">getVision</a>(const double &amp;time) const</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#af577f63522e847a46e56962f6a6e264a">inertialPoints</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>initialNoise</b> (defined in <a class="el" href="classVIOSimulator.html">VIOSimulator</a>)</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>inputNoise</b> (defined in <a class="el" href="classVIOSimulator.html">VIOSimulator</a>)</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classVIOSimulator.html#aaa25bc5f86c1f972a488135420957b33">maxFeatures</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#a442317c3dff0ba9452121d99d9877a43">pointId2TrackingId</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>outputNoise</b> (defined in <a class="el" href="classVIOSimulator.html">VIOSimulator</a>)</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classVIOSimulator.html#a68c7a40b8ad734eeba43f604a420f8df">poses</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classVIOSimulator.html#a9f5a44aa92f1172959fc818fa6eb06b0">randomSeed</a></td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classVIOSimulator.html#af3cbbdd4532901f81df1b34e95168291">viewPoses</a>() const</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>VIOSimulator</b>()=default (defined in <a class="el" href="classVIOSimulator.html">VIOSimulator</a>)</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classVIOSimulator.html#a89c555ef18211a173bbab35689e713bc">VIOSimulator</a>(const std::string &amp;posesFileName, const YAML::Node &amp;settings=YAML::Node(), const double timeScale=1.0, const int column=0, const char delim=',')</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classVIOSimulator.html#a2785cccb92d2d88b2a2f9a3f7fa3d0c0">VIOSimulator</a>(const std::vector&lt; StampedPose &gt; &amp;poses, const GIFT::GICameraPtr &amp;camPtr, const YAML::Node &amp;settings=YAML::Node(), const VIOFilter::Settings &amp;filterSettings=VIOFilter::Settings())</td><td class="entry"><a class="el" href="classVIOSimulator.html">VIOSimulator</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

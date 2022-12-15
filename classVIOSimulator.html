@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classVIOSimulator-members.html">List of all members</a>  </div>
@@ -83,42 +84,59 @@ $(function() {
  <a href="classVIOSimulator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="VIOSimulator_8h_source.html">VIOSimulator.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for VIOSimulator:</div>
+<div class="dyncontent">
+<div class="center"><img src="classVIOSimulator__coll__graph.png" border="0" usemap="#VIOSimulator_coll__map" alt="Collaboration graph"/></div>
+<map name="VIOSimulator_coll__map" id="VIOSimulator_coll__map">
+<area shape="rect" title="A simulator for VIO measurements from a given groundtruth trajectory." alt="" coords="21,95,129,121"/>
+<area shape="rect" href="structVIOFilter_1_1Settings.html" title="The settings of the EqF for VIO." alt="" coords="5,5,144,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a28a381619621dac6f870f54b8561cfe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVisionMeasurement.html">VisionMeasurement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a28a381619621dac6f870f54b8561cfe0">getVision</a> (const double &amp;time) const</td></tr>
 <tr class="memdesc:a28a381619621dac6f870f54b8561cfe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a vision measurement at the given time.  <a href="classVIOSimulator.html#a28a381619621dac6f870f54b8561cfe0">More...</a><br /></td></tr>
 <tr class="separator:a28a381619621dac6f870f54b8561cfe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d80cc33cdcc21c93dddd3a29b1d2b79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIMUVelocity.html">IMUVelocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a1d80cc33cdcc21c93dddd3a29b1d2b79">getIMU</a> (const double &amp;time) const</td></tr>
-<tr class="memdesc:a1d80cc33cdcc21c93dddd3a29b1d2b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an IMU measurement at the given time.  <a href="classVIOSimulator.html#a1d80cc33cdcc21c93dddd3a29b1d2b79">More...</a><br /></td></tr>
-<tr class="separator:a1d80cc33cdcc21c93dddd3a29b1d2b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13bec4d8b8b2d55ae12915cb1212d84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIMUVelocity.html">IMUVelocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#af13bec4d8b8b2d55ae12915cb1212d84">getIMU</a> (const double &amp;time, const double &amp;samplingFrequency=-1) const</td></tr>
+<tr class="memdesc:af13bec4d8b8b2d55ae12915cb1212d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an IMU measurement at the given time.  <a href="classVIOSimulator.html#af13bec4d8b8b2d55ae12915cb1212d84">More...</a><br /></td></tr>
+<tr class="separator:af13bec4d8b8b2d55ae12915cb1212d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3cbbdd4532901f81df1b34e95168291"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#af3cbbdd4532901f81df1b34e95168291">viewPoses</a> () const</td></tr>
 <tr class="memdesc:af3cbbdd4532901f81df1b34e95168291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the vector of ground truth poses.  <a href="classVIOSimulator.html#af3cbbdd4532901f81df1b34e95168291">More...</a><br /></td></tr>
 <tr class="separator:af3cbbdd4532901f81df1b34e95168291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89c555ef18211a173bbab35689e713bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a89c555ef18211a173bbab35689e713bc">VIOSimulator</a> (const std::string &amp;posesFileName, const YAML::Node &amp;settings=YAML::Node(), const double timeScale=1.0, const int column=0, const char delim=',')</td></tr>
-<tr class="memdesc:a89c555ef18211a173bbab35689e713bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a simulator from a groundtruth file and some settings.  <a href="classVIOSimulator.html#a89c555ef18211a173bbab35689e713bc">More...</a><br /></td></tr>
-<tr class="separator:a89c555ef18211a173bbab35689e713bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8792d79db8e24a44bd3640e84a895e46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVIOState.html">VIOState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a8792d79db8e24a44bd3640e84a895e46">getFullState</a> (const double &amp;time=-1, const bool &amp;allowNoise=false) const</td></tr>
+<tr class="memdesc:a8792d79db8e24a44bd3640e84a895e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full VIO state at the desired time.  <a href="classVIOSimulator.html#a8792d79db8e24a44bd3640e84a895e46">More...</a><br /></td></tr>
+<tr class="separator:a8792d79db8e24a44bd3640e84a895e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2785cccb92d2d88b2a2f9a3f7fa3d0c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a2785cccb92d2d88b2a2f9a3f7fa3d0c0">VIOSimulator</a> (const std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt; &amp;<a class="el" href="classVIOSimulator.html#a68c7a40b8ad734eeba43f604a420f8df">poses</a>, const GIFT::GICameraPtr &amp;camPtr, const YAML::Node &amp;settings=YAML::Node(), const <a class="el" href="structVIOFilter_1_1Settings.html">VIOFilter::Settings</a> &amp;filterSettings=<a class="el" href="structVIOFilter_1_1Settings.html">VIOFilter::Settings</a>())</td></tr>
+<tr class="memdesc:a2785cccb92d2d88b2a2f9a3f7fa3d0c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a simulator from a groundtruth file and some settings.  <a href="classVIOSimulator.html#a2785cccb92d2d88b2a2f9a3f7fa3d0c0">More...</a><br /></td></tr>
+<tr class="separator:a2785cccb92d2d88b2a2f9a3f7fa3d0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4c5f88dfddd3943fe32b3b785117ea56"><td class="memItemLeft" align="right" valign="top"><a id="a4c5f88dfddd3943fe32b3b785117ea56"></a>
+GIFT::GICameraPtr&#160;</td><td class="memItemRight" valign="bottom"><b>cameraPtr</b></td></tr>
+<tr class="separator:a4c5f88dfddd3943fe32b3b785117ea56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af754aca9ccfdec1bcfa8e07fd6906631"><td class="memItemLeft" align="right" valign="top"><a id="af754aca9ccfdec1bcfa8e07fd6906631"></a>
+liepp::SE3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#af754aca9ccfdec1bcfa8e07fd6906631">cameraOffset</a> = liepp::SE3d::Identity()</td></tr>
+<tr class="memdesc:af754aca9ccfdec1bcfa8e07fd6906631"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chosen offset between IMU and camera. <br /></td></tr>
+<tr class="separator:af754aca9ccfdec1bcfa8e07fd6906631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a25b4f55b65d46918c2446c93390e2327"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structLandmark.html">Landmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a25b4f55b65d46918c2446c93390e2327">generateWorldPoints</a> (const int num=1000, const double distance=1.0) const</td></tr>
-<tr class="memdesc:a25b4f55b65d46918c2446c93390e2327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a number of points for the simulator world.  <a href="classVIOSimulator.html#a25b4f55b65d46918c2446c93390e2327">More...</a><br /></td></tr>
-<tr class="separator:a25b4f55b65d46918c2446c93390e2327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e10c0da7f03b328841d70fa7996b591"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structLandmark.html">Landmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a0e10c0da7f03b328841d70fa7996b591">generateWorldPoints</a> (const int num=1000, const double distance=1.0, const int numWalls=1) const</td></tr>
+<tr class="memdesc:a0e10c0da7f03b328841d70fa7996b591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a number of points for the simulator world.  <a href="classVIOSimulator.html#a0e10c0da7f03b328841d70fa7996b591">More...</a><br /></td></tr>
+<tr class="separator:a0e10c0da7f03b328841d70fa7996b591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173dce74ed280372b942035138d4473b"><td class="memItemLeft" align="right" valign="top"><a id="a173dce74ed280372b942035138d4473b"></a>
+Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><b>getInertialStates</b> (std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt;::const_iterator it, const double &amp;ct) const</td></tr>
+<tr class="separator:a173dce74ed280372b942035138d4473b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a9f5a44aa92f1172959fc818fa6eb06b0"><td class="memItemLeft" align="right" valign="top"><a id="a9f5a44aa92f1172959fc818fa6eb06b0"></a>
-uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a9f5a44aa92f1172959fc818fa6eb06b0">randomSeed</a></td></tr>
+uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a9f5a44aa92f1172959fc818fa6eb06b0">randomSeed</a> = 0</td></tr>
 <tr class="memdesc:a9f5a44aa92f1172959fc818fa6eb06b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value used to seed the random number generation. <br /></td></tr>
 <tr class="separator:a9f5a44aa92f1172959fc818fa6eb06b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a442317c3dff0ba9452121d99d9877a43"><td class="memItemLeft" align="right" valign="top"><a id="a442317c3dff0ba9452121d99d9877a43"></a>
-std::map&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a442317c3dff0ba9452121d99d9877a43">pointId2TrackingId</a></td></tr>
-<tr class="memdesc:a442317c3dff0ba9452121d99d9877a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map from world point indexes to tracking id numbers. <br /></td></tr>
-<tr class="separator:a442317c3dff0ba9452121d99d9877a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df29e54846fd455e82bf6421611b0f2"><td class="memItemLeft" align="right" valign="top"><a id="a8df29e54846fd455e82bf6421611b0f2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a8df29e54846fd455e82bf6421611b0f2">currentTrackingId</a> = 0</td></tr>
-<tr class="memdesc:a8df29e54846fd455e82bf6421611b0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latest tracking id assigned to a point. <br /></td></tr>
-<tr class="separator:a8df29e54846fd455e82bf6421611b0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68c7a40b8ad734eeba43f604a420f8df"><td class="memItemLeft" align="right" valign="top"><a id="a68c7a40b8ad734eeba43f604a420f8df"></a>
 std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#a68c7a40b8ad734eeba43f604a420f8df">poses</a></td></tr>
 <tr class="memdesc:a68c7a40b8ad734eeba43f604a420f8df"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the ground truth poses with time stamps. <br /></td></tr>
@@ -127,25 +145,29 @@ std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt;
 std::vector&lt; <a class="el" href="structLandmark.html">Landmark</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#af577f63522e847a46e56962f6a6e264a">inertialPoints</a></td></tr>
 <tr class="memdesc:af577f63522e847a46e56962f6a6e264a"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the points generated for the simulation world. <br /></td></tr>
 <tr class="separator:af577f63522e847a46e56962f6a6e264a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af754aca9ccfdec1bcfa8e07fd6906631"><td class="memItemLeft" align="right" valign="top"><a id="af754aca9ccfdec1bcfa8e07fd6906631"></a>
-liepp::SE3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#af754aca9ccfdec1bcfa8e07fd6906631">cameraOffset</a> = liepp::SE3d::Identity()</td></tr>
-<tr class="memdesc:af754aca9ccfdec1bcfa8e07fd6906631"><td class="mdescLeft">&#160;</td><td class="mdescRight">The chosen offset between IMU and camera. <br /></td></tr>
-<tr class="separator:af754aca9ccfdec1bcfa8e07fd6906631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0f86da7206d2cb791042f2f93937433"><td class="memItemLeft" align="right" valign="top"><a id="af0f86da7206d2cb791042f2f93937433"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#af0f86da7206d2cb791042f2f93937433">fieldOfView</a> = 60 * 3.14 / 180.</td></tr>
-<tr class="memdesc:af0f86da7206d2cb791042f2f93937433"><td class="mdescLeft">&#160;</td><td class="mdescRight">The camera's desired field of view, in radians. <br /></td></tr>
-<tr class="separator:af0f86da7206d2cb791042f2f93937433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa25bc5f86c1f972a488135420957b33"><td class="memItemLeft" align="right" valign="top"><a id="aaa25bc5f86c1f972a488135420957b33"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOSimulator.html#aaa25bc5f86c1f972a488135420957b33">maxFeatures</a> = 30</td></tr>
 <tr class="memdesc:aaa25bc5f86c1f972a488135420957b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of features tracked at any given time. <br /></td></tr>
 <tr class="separator:aaa25bc5f86c1f972a488135420957b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958528aba4e4f4b3d83420d7919c434e"><td class="memItemLeft" align="right" valign="top"><a id="a958528aba4e4f4b3d83420d7919c434e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>initialNoise</b> = false</td></tr>
+<tr class="separator:a958528aba4e4f4b3d83420d7919c434e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3444b12b8ffe544753de11cbec1caa66"><td class="memItemLeft" align="right" valign="top"><a id="a3444b12b8ffe544753de11cbec1caa66"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>inputNoise</b> = false</td></tr>
+<tr class="separator:a3444b12b8ffe544753de11cbec1caa66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f9333e9b02c9b10838d33ade0a6ff9"><td class="memItemLeft" align="right" valign="top"><a id="a82f9333e9b02c9b10838d33ade0a6ff9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>outputNoise</b> = false</td></tr>
+<tr class="separator:a82f9333e9b02c9b10838d33ade0a6ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058b77bb89820fbd9015fd73c30dd128"><td class="memItemLeft" align="right" valign="top"><a id="a058b77bb89820fbd9015fd73c30dd128"></a>
+<a class="el" href="structVIOFilter_1_1Settings.html">VIOFilter::Settings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>filterSettings</b></td></tr>
+<tr class="separator:a058b77bb89820fbd9015fd73c30dd128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A simulator for VIO measurements from a given groundtruth trajectory. </p>
 <p>This class is able to simulate IMU and feature measurements from a given groundtruth VIO trajectory. The simulation world has a large number of landmark points, and these are tracked between requests for vision measurements, similarly to a real-world feature tracking output. This code is mostly used for testing purposes, and can be used alongside real data to provide just IMU or just feature measurements. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a89c555ef18211a173bbab35689e713bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89c555ef18211a173bbab35689e713bc">&#9670;&nbsp;</a></span>VIOSimulator()</h2>
+<a id="a2785cccb92d2d88b2a2f9a3f7fa3d0c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2785cccb92d2d88b2a2f9a3f7fa3d0c0">&#9670;&nbsp;</a></span>VIOSimulator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,8 +175,14 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         <tr>
           <td class="memname">VIOSimulator::VIOSimulator </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>posesFileName</em>, </td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>poses</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GIFT::GICameraPtr &amp;&#160;</td>
+          <td class="paramname"><em>camPtr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -165,20 +193,8 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>timeScale</em> = <code>1.0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>column</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>delim</em> = <code>','</code>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structVIOFilter_1_1Settings.html">VIOFilter::Settings</a> &amp;&#160;</td>
+          <td class="paramname"><em>filterSettings</em> = <code><a class="el" href="structVIOFilter_1_1Settings.html">VIOFilter::Settings</a>()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -191,21 +207,17 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <p>Create a simulator from a groundtruth file and some settings. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">posesFileName</td><td>The name of the groundtruth file </td></tr>
+    <tr><td class="paramname">poses</td><td>The sequence of poses to use in generating measurements </td></tr>
     <tr><td class="paramname">settings</td><td>The simulator settings YAML node </td></tr>
-    <tr><td class="paramname">timeScale</td><td>The representation of time in the groundtruth file. e.g. 1.0e-9 for ns. </td></tr>
-    <tr><td class="paramname">column</td><td>The first column with relevant data in the groundtruth file. </td></tr>
-    <tr><td class="paramname">delim</td><td>The file delimiter</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Reading groundtruth in this way should be the responsibility of the relevant datasetReader. The simulator constructor should instead just accept the list of stamped poses. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a25b4f55b65d46918c2446c93390e2327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25b4f55b65d46918c2446c93390e2327">&#9670;&nbsp;</a></span>generateWorldPoints()</h2>
+<a id="a0e10c0da7f03b328841d70fa7996b591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e10c0da7f03b328841d70fa7996b591">&#9670;&nbsp;</a></span>generateWorldPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +235,13 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>distance</em> = <code>1.0</code>&#160;</td>
+          <td class="paramname"><em>distance</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>numWalls</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -251,8 +269,46 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a1d80cc33cdcc21c93dddd3a29b1d2b79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d80cc33cdcc21c93dddd3a29b1d2b79">&#9670;&nbsp;</a></span>getIMU()</h2>
+<a id="a8792d79db8e24a44bd3640e84a895e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8792d79db8e24a44bd3640e84a895e46">&#9670;&nbsp;</a></span>getFullState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVIOState.html">VIOState</a> VIOSimulator::getFullState </td>
+          <td>(</td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>time</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>allowNoise</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the full VIO state at the desired time. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time</td><td>The time at which the VIO state should be provided. </td></tr>
+    <tr><td class="paramname">allowNoise</td><td>Whether noise should be allowed to be added to the state. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The (potentially noisy) VIO state at the given time. </dd></dl>
+
+</div>
+</div>
+<a id="af13bec4d8b8b2d55ae12915cb1212d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13bec4d8b8b2d55ae12915cb1212d84">&#9670;&nbsp;</a></span>getIMU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,8 +317,18 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
           <td class="memname"><a class="el" href="structIMUVelocity.html">IMUVelocity</a> VIOSimulator::getIMU </td>
           <td>(</td>
           <td class="paramtype">const double &amp;&#160;</td>
-          <td class="paramname"><em>time</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>samplingFrequency</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -271,6 +337,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">time</td><td>The time of the IMU measurement. </td></tr>
+    <tr><td class="paramname">samplingFrequency</td><td>The frequency of IMU sampling (relevant for noise addition). </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +371,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The tracked features at the given time.</dd></dl>
 <p>The currently tracked features are tracked to the given time, if possible. Then, if this is not the maximum number of features, new features are added from the world points. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd>Add camera support to the simulator </dd></dl>
 
 </div>
 </div>

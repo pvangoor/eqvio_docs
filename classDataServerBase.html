@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -87,9 +87,20 @@ Inheritance diagram for DataServerBase:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDataServerBase__inherit__graph.png" border="0" usemap="#DataServerBase_inherit__map" alt="Inheritance graph"/></div>
 <map name="DataServerBase_inherit__map" id="DataServerBase_inherit__map">
-<area shape="rect" title="The common interface of data servers." alt="" coords="97,5,224,32"/>
+<area shape="rect" title="The common interface of data servers." alt="" coords="189,5,316,32"/>
 <area shape="rect" href="classSimpleDataServer.html" title="The simplest implementation of a data server." alt="" coords="5,80,145,107"/>
-<area shape="rect" href="classThreadedDataServer.html" title="A threaded implementation of a data server." alt="" coords="169,80,325,107"/>
+<area shape="rect" href="classSimulationDataServer.html" title="A data server that provides purely simulated data." alt="" coords="170,80,335,107"/>
+<area shape="rect" href="classThreadedDataServer.html" title="A threaded implementation of a data server." alt="" coords="360,80,516,107"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for DataServerBase:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDataServerBase__coll__graph.png" border="0" usemap="#DataServerBase_coll__map" alt="Collaboration graph"/></div>
+<map name="DataServerBase_coll__map" id="DataServerBase_coll__map">
+<area shape="rect" title="The common interface of data servers." alt="" coords="11,184,138,211"/>
+<area shape="rect" href="classVIOSimulator.html" title="A simulator for VIO measurements from a given groundtruth trajectory." alt="" coords="21,95,129,121"/>
+<area shape="rect" href="structVIOFilter_1_1Settings.html" title="The settings of the EqF for VIO." alt="" coords="5,5,144,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -106,6 +117,9 @@ virtual GIFT::GICameraPtr&#160;</td><td class="memItemRight" valign="bottom"><a 
 virtual std::shared_ptr&lt; liepp::SE3d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#a0e862e94a8e7e46304eebbc6adc0f383">cameraExtrinsics</a> () const</td></tr>
 <tr class="memdesc:a0e862e94a8e7e46304eebbc6adc0f383"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the dataset camera extrinsics. <br /></td></tr>
 <tr class="separator:a0e862e94a8e7e46304eebbc6adc0f383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79d321a103afd888940c0ddac6ddf24"><td class="memItemLeft" align="right" valign="top"><a id="ab79d321a103afd888940c0ddac6ddf24"></a>
+virtual std::shared_ptr&lt; liepp::SE3d &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>groundTruthPose</b> (const double stamp=-1) const</td></tr>
+<tr class="separator:ab79d321a103afd888940c0ddac6ddf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a661a013d30da5466cd83ff2c9c59625c"><td class="memItemLeft" align="right" valign="top"><a id="a661a013d30da5466cd83ff2c9c59625c"></a>
 virtual MeasurementType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#a661a013d30da5466cd83ff2c9c59625c">nextMeasurementType</a> () const =0</td></tr>
 <tr class="memdesc:a661a013d30da5466cd83ff2c9c59625c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the next measurement in the dataset. <br /></td></tr>
@@ -130,9 +144,9 @@ virtual <a class="el" href="structVisionMeasurement.html">VisionMeasurement</a>&
 virtual <a class="el" href="structIMUVelocity.html">IMUVelocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#a68e2285638296b73c450d7d0dd3fe07d">getSimIMU</a> ()</td></tr>
 <tr class="memdesc:a68e2285638296b73c450d7d0dd3fe07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a simulated IMU measurement at the time of the next real IMU data. <br /></td></tr>
 <tr class="separator:a68e2285638296b73c450d7d0dd3fe07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f761c4b775cf52b3675c4a1acaa5fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#ad0f761c4b775cf52b3675c4a1acaa5fb">DataServerBase</a> (std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;datasetReader)</td></tr>
-<tr class="memdesc:ad0f761c4b775cf52b3675c4a1acaa5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a data server with a new dataset reader.  <a href="classDataServerBase.html#ad0f761c4b775cf52b3675c4a1acaa5fb">More...</a><br /></td></tr>
-<tr class="separator:ad0f761c4b775cf52b3675c4a1acaa5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17bcaf286382a9f9982bc7eef415e97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#aa17bcaf286382a9f9982bc7eef415e97">DataServerBase</a> (std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;datasetReader, const YAML::Node &amp;simSettings)</td></tr>
+<tr class="memdesc:aa17bcaf286382a9f9982bc7eef415e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a data server with a new dataset reader.  <a href="classDataServerBase.html#aa17bcaf286382a9f9982bc7eef415e97">More...</a><br /></td></tr>
+<tr class="separator:aa17bcaf286382a9f9982bc7eef415e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -140,13 +154,17 @@ Protected Attributes</h2></td></tr>
 std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#ad5e96a0833b89e2d2c21987d3ae4bec7">datasetReaderPtr</a></td></tr>
 <tr class="memdesc:ad5e96a0833b89e2d2c21987d3ae4bec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dataset reader providing measurements. <br /></td></tr>
 <tr class="separator:ad5e96a0833b89e2d2c21987d3ae4bec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9719b0fa79bef43e0c4908f7cf8cda1c"><td class="memItemLeft" align="right" valign="top"><a id="a9719b0fa79bef43e0c4908f7cf8cda1c"></a>
+<a class="el" href="classVIOSimulator.html">VIOSimulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#a9719b0fa79bef43e0c4908f7cf8cda1c">simulator</a></td></tr>
+<tr class="memdesc:a9719b0fa79bef43e0c4908f7cf8cda1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The simulator providing substitutions for measurements. <br /></td></tr>
+<tr class="separator:a9719b0fa79bef43e0c4908f7cf8cda1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The common interface of data servers. </p>
 <p>This abstraction helps to create a common interface between different data server implementations. A data server provides the visual and inertial measurements in order, and can be queried to find out what the next measurement type is. It is able to do this using data from any dataset reader. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad0f761c4b775cf52b3675c4a1acaa5fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0f761c4b775cf52b3675c4a1acaa5fb">&#9670;&nbsp;</a></span>DataServerBase()</h2>
+<a id="aa17bcaf286382a9f9982bc7eef415e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17bcaf286382a9f9982bc7eef415e97">&#9670;&nbsp;</a></span>DataServerBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,8 +173,18 @@ std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetRead
           <td class="memname">DataServerBase::DataServerBase </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>datasetReader</em></td><td>)</td>
+          <td class="paramname"><em>datasetReader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const YAML::Node &amp;&#160;</td>
+          <td class="paramname"><em>simSettings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -165,6 +193,7 @@ std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetRead
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">datasetReader</td><td>An rvalue reference to a dataset reader unique_ptr. </td></tr>
+    <tr><td class="paramname">simSettings</td><td>The settings to use for the simulator, in case simulated measurements are requested. </td></tr>
   </table>
   </dd>
 </dl>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>eqvio: include/eqvio/VIOGroup.h Source File</title>
+<title>eqvio: include/eqvio/mathematical/VIOGroup.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -69,7 +69,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_58a5fff688f7ed5c943636dffb8771bf.html">eqvio</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_58a5fff688f7ed5c943636dffb8771bf.html">eqvio</a></li><li class="navelem"><a class="el" href="dir_32351f1312968f0fd7cf7c5148d70a94.html">mathematical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,8 +96,8 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="VIOState_8h.html">eqvio/VIOState.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;eqvio/csv/CSVReader.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;eqvio/csv/CSVReader.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="VIOState_8h.html">eqvio/mathematical/VIOState.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;liepp/SE3.h&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;liepp/SOT3.h&quot;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
@@ -164,7 +164,7 @@ $(function() {
 <div class="ttc" id="aVIOGroup_8h_html_a0414fc7c8046331b516f8e70cebc2f40"><div class="ttname"><a href="VIOGroup_8h.html#a0414fc7c8046331b516f8e70cebc2f40">liftVelocityDiscrete</a></div><div class="ttdeci">VIOGroup liftVelocityDiscrete(const VIOState &amp;state, const IMUVelocity &amp;velocity, const double &amp;dt)</div><div class="ttdoc">A discrete version of the VIO system lift.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:229</div></div>
 <div class="ttc" id="aVIOState_8h_html"><div class="ttname"><a href="VIOState_8h.html">VIOState.h</a></div></div>
 <div class="ttc" id="astructVIOAlgebra_html_a02e4f6e06ddb3333510b1db98216acb4"><div class="ttname"><a href="structVIOAlgebra.html#a02e4f6e06ddb3333510b1db98216acb4">VIOAlgebra::U_B</a></div><div class="ttdeci">liepp::se3d U_B</div><div class="ttdoc">The algebra component related to robot velocity.</div><div class="ttdef"><b>Definition:</b> VIOGroup.h:88</div></div>
-<div class="ttc" id="aVIOGroup_8h_html_a0cab7d01a627ec2dc06e4cf331630470"><div class="ttname"><a href="VIOGroup_8h.html#a0cab7d01a627ec2dc06e4cf331630470">operator*</a></div><div class="ttdeci">VIOAlgebra operator*(const double &amp;c, const VIOAlgebra &amp;lambda)</div><div class="ttdoc">Scale an algebra element by a constant.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:289</div></div>
+<div class="ttc" id="aVIOGroup_8h_html_a0cab7d01a627ec2dc06e4cf331630470"><div class="ttname"><a href="VIOGroup_8h.html#a0cab7d01a627ec2dc06e4cf331630470">operator*</a></div><div class="ttdeci">VIOAlgebra operator*(const double &amp;c, const VIOAlgebra &amp;lambda)</div><div class="ttdoc">Scale an algebra element by a constant.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:292</div></div>
 <div class="ttc" id="astructVIOGroup_html_ad72b8f9120688fc0aca833378c9b8804"><div class="ttname"><a href="structVIOGroup.html#ad72b8f9120688fc0aca833378c9b8804">VIOGroup::hasNaN</a></div><div class="ttdeci">bool hasNaN() const</div><div class="ttdoc">Check if any components of the group are NaN.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:122</div></div>
 <div class="ttc" id="astructVIOAlgebra_html_a9f74ddb6529cc0dcaad1c2523f569fe0"><div class="ttname"><a href="structVIOAlgebra.html#a9f74ddb6529cc0dcaad1c2523f569fe0">VIOAlgebra::operator-</a></div><div class="ttdeci">VIOAlgebra operator-() const</div><div class="ttdoc">Get the negative version of an algebra element.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:154</div></div>
 <div class="ttc" id="aVIOGroup_8h_html_a0ad289643b79d94a721c3aeddff06897"><div class="ttname"><a href="VIOGroup_8h.html#a0ad289643b79d94a721c3aeddff06897">stateGroupAction</a></div><div class="ttdeci">VIOState stateGroupAction(const VIOGroup &amp;X, const VIOState &amp;state)</div><div class="ttdoc">The group action of the VIO group on the a VIO system state.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:34</div></div>
@@ -179,13 +179,13 @@ $(function() {
 <div class="ttc" id="astructVIOGroup_html_ac93be647025a25e74763d9fa27bc583b"><div class="ttname"><a href="structVIOGroup.html#ac93be647025a25e74763d9fa27bc583b">VIOGroup::id</a></div><div class="ttdeci">std::vector&lt; int &gt; id</div><div class="ttdoc">The id numbers associated with the SOT(3) components.</div><div class="ttdef"><b>Definition:</b> VIOGroup.h:38</div></div>
 <div class="ttc" id="astructVIOAlgebra_html_ab23e8f13155ddbf316529e6690cb3a62"><div class="ttname"><a href="structVIOAlgebra.html#ab23e8f13155ddbf316529e6690cb3a62">VIOAlgebra::u_w</a></div><div class="ttdeci">Eigen::Vector3d u_w</div><div class="ttdoc">The algebra component related to camera offset.</div><div class="ttdef"><b>Definition:</b> VIOGroup.h:89</div></div>
 <div class="ttc" id="astructVIOGroup_html_a27f0179de8dfcfd8cdff9f2a440dc8dd"><div class="ttname"><a href="structVIOGroup.html#a27f0179de8dfcfd8cdff9f2a440dc8dd">VIOGroup::beta</a></div><div class="ttdeci">Eigen::Matrix&lt; double, 6, 1 &gt; beta</div><div class="ttdoc">The symmetry component related to IMU biases.</div><div class="ttdef"><b>Definition:</b> VIOGroup.h:33</div></div>
-<div class="ttc" id="astructVIOSensorState_html"><div class="ttname"><a href="structVIOSensorState.html">VIOSensorState</a></div><div class="ttdoc">The states of the sensors of the VIO system.</div><div class="ttdef"><b>Definition:</b> VIOState.h:53</div></div>
-<div class="ttc" id="aVIOGroup_8h_html_a4fdf669f2f8c968ec15fc9d2ca81f8f0"><div class="ttname"><a href="VIOGroup_8h.html#a4fdf669f2f8c968ec15fc9d2ca81f8f0">VIOExp</a></div><div class="ttdeci">VIOGroup VIOExp(const VIOAlgebra &amp;lambda)</div><div class="ttdoc">The Lie theoretic exponential map from the VIO Lie algebra to the VIO group.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:270</div></div>
+<div class="ttc" id="astructVIOSensorState_html"><div class="ttname"><a href="structVIOSensorState.html">VIOSensorState</a></div><div class="ttdoc">The states of the sensors of the VIO system.</div><div class="ttdef"><b>Definition:</b> VIOState.h:60</div></div>
+<div class="ttc" id="aVIOGroup_8h_html_a4fdf669f2f8c968ec15fc9d2ca81f8f0"><div class="ttname"><a href="VIOGroup_8h.html#a4fdf669f2f8c968ec15fc9d2ca81f8f0">VIOExp</a></div><div class="ttdeci">VIOGroup VIOExp(const VIOAlgebra &amp;lambda)</div><div class="ttdoc">The Lie theoretic exponential map from the VIO Lie algebra to the VIO group.</div><div class="ttdef"><b>Definition:</b> VIOGroup.cpp:273</div></div>
 <div class="ttc" id="aclassCSVLine_html"><div class="ttname"><a href="classCSVLine.html">CSVLine</a></div><div class="ttdoc">A line of csv values.</div><div class="ttdef"><b>Definition:</b> CSVLine.h:44</div></div>
 <div class="ttc" id="astructVIOGroup_html_a1f0267035f650054f063aa737b1094ae"><div class="ttname"><a href="structVIOGroup.html#a1f0267035f650054f063aa737b1094ae">VIOGroup::Q</a></div><div class="ttdeci">std::vector&lt; liepp::SOT3d &gt; Q</div><div class="ttdoc">The symmetry components related to landmark positions.</div><div class="ttdef"><b>Definition:</b> VIOGroup.h:37</div></div>
 <div class="ttc" id="astructVisionMeasurement_html"><div class="ttname"><a href="structVisionMeasurement.html">VisionMeasurement</a></div><div class="ttdoc">A measurement of features from an image.</div><div class="ttdef"><b>Definition:</b> VisionMeasurement.h:35</div></div>
 <div class="ttc" id="astructVIOAlgebra_html"><div class="ttname"><a href="structVIOAlgebra.html">VIOAlgebra</a></div><div class="ttdoc">The Lie algebra of the VIOGroup.</div><div class="ttdef"><b>Definition:</b> VIOGroup.h:85</div></div>
-<div class="ttc" id="astructVIOState_html"><div class="ttname"><a href="structVIOState.html">VIOState</a></div><div class="ttdoc">The states of the VIO system.</div><div class="ttdef"><b>Definition:</b> VIOState.h:71</div></div>
+<div class="ttc" id="astructVIOState_html"><div class="ttname"><a href="structVIOState.html">VIOState</a></div><div class="ttdoc">The states of the VIO system.</div><div class="ttdef"><b>Definition:</b> VIOState.h:78</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

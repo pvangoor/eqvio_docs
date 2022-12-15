@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -96,8 +96,10 @@ Collaboration diagram for SimpleDataServer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSimpleDataServer__coll__graph.png" border="0" usemap="#SimpleDataServer_coll__map" alt="Collaboration graph"/></div>
 <map name="SimpleDataServer_coll__map" id="SimpleDataServer_coll__map">
-<area shape="rect" title="The simplest implementation of a data server." alt="" coords="5,80,145,107"/>
-<area shape="rect" href="classDataServerBase.html" title="The common interface of data servers." alt="" coords="12,5,139,32"/>
+<area shape="rect" title="The simplest implementation of a data server." alt="" coords="5,260,145,287"/>
+<area shape="rect" href="classDataServerBase.html" title="The common interface of data servers." alt="" coords="12,184,139,211"/>
+<area shape="rect" href="classVIOSimulator.html" title="A simulator for VIO measurements from a given groundtruth trajectory." alt="" coords="21,95,129,121"/>
+<area shape="rect" href="structVIOFilter_1_1Settings.html" title="The settings of the EqF for VIO." alt="" coords="6,5,145,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -119,9 +121,9 @@ virtual <a class="el" href="structIMUVelocity.html">IMUVelocity</a>&#160;</td><t
 virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleDataServer.html#a4e3929f4126e418ed6c66b0edffa9b36">nextTime</a> () const override</td></tr>
 <tr class="memdesc:a4e3929f4126e418ed6c66b0edffa9b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timestamp of the next data, IMU or image. <br /></td></tr>
 <tr class="separator:a4e3929f4126e418ed6c66b0edffa9b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f51a21ce325146e8fb3728d014fe1c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleDataServer.html#a5f51a21ce325146e8fb3728d014fe1c5">SimpleDataServer</a> (std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;datasetReader)</td></tr>
-<tr class="memdesc:a5f51a21ce325146e8fb3728d014fe1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct the simple data server from a dataset reader.  <a href="classSimpleDataServer.html#a5f51a21ce325146e8fb3728d014fe1c5">More...</a><br /></td></tr>
-<tr class="separator:a5f51a21ce325146e8fb3728d014fe1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b9508a18dbc50f920544f2a75ccf48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleDataServer.html#a20b9508a18dbc50f920544f2a75ccf48">SimpleDataServer</a> (std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;datasetReader, const YAML::Node &amp;simSettings=YAML::Node())</td></tr>
+<tr class="memdesc:a20b9508a18dbc50f920544f2a75ccf48"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct the simple data server from a dataset reader.  <a href="classSimpleDataServer.html#a20b9508a18dbc50f920544f2a75ccf48">More...</a><br /></td></tr>
+<tr class="separator:a20b9508a18dbc50f920544f2a75ccf48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDataServerBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDataServerBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDataServerBase.html">DataServerBase</a></td></tr>
 <tr class="memitem:ad80bd9599ed7827a6e70c59fd368234a inherit pub_methods_classDataServerBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#ad80bd9599ed7827a6e70c59fd368234a">readCamera</a> (const std::string &amp;cameraFileName)</td></tr>
 <tr class="memdesc:ad80bd9599ed7827a6e70c59fd368234a inherit pub_methods_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a camera by using the dataset reader.  <a href="classDataServerBase.html#ad80bd9599ed7827a6e70c59fd368234a">More...</a><br /></td></tr>
@@ -134,6 +136,9 @@ virtual GIFT::GICameraPtr&#160;</td><td class="memItemRight" valign="bottom"><a 
 virtual std::shared_ptr&lt; liepp::SE3d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#a0e862e94a8e7e46304eebbc6adc0f383">cameraExtrinsics</a> () const</td></tr>
 <tr class="memdesc:a0e862e94a8e7e46304eebbc6adc0f383 inherit pub_methods_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the dataset camera extrinsics. <br /></td></tr>
 <tr class="separator:a0e862e94a8e7e46304eebbc6adc0f383 inherit pub_methods_classDataServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79d321a103afd888940c0ddac6ddf24 inherit pub_methods_classDataServerBase"><td class="memItemLeft" align="right" valign="top"><a id="ab79d321a103afd888940c0ddac6ddf24"></a>
+virtual std::shared_ptr&lt; liepp::SE3d &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>groundTruthPose</b> (const double stamp=-1) const</td></tr>
+<tr class="separator:ab79d321a103afd888940c0ddac6ddf24 inherit pub_methods_classDataServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae54100ae31939fc68ab7f630038639f7 inherit pub_methods_classDataServerBase"><td class="memItemLeft" align="right" valign="top"><a id="ae54100ae31939fc68ab7f630038639f7"></a>
 virtual <a class="el" href="structVisionMeasurement.html">VisionMeasurement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#ae54100ae31939fc68ab7f630038639f7">getSimVision</a> ()</td></tr>
 <tr class="memdesc:ae54100ae31939fc68ab7f630038639f7 inherit pub_methods_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a simulated vision measurement at the time of the next real image data. <br /></td></tr>
@@ -142,9 +147,9 @@ virtual <a class="el" href="structVisionMeasurement.html">VisionMeasurement</a>&
 virtual <a class="el" href="structIMUVelocity.html">IMUVelocity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#a68e2285638296b73c450d7d0dd3fe07d">getSimIMU</a> ()</td></tr>
 <tr class="memdesc:a68e2285638296b73c450d7d0dd3fe07d inherit pub_methods_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a simulated IMU measurement at the time of the next real IMU data. <br /></td></tr>
 <tr class="separator:a68e2285638296b73c450d7d0dd3fe07d inherit pub_methods_classDataServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f761c4b775cf52b3675c4a1acaa5fb inherit pub_methods_classDataServerBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#ad0f761c4b775cf52b3675c4a1acaa5fb">DataServerBase</a> (std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;datasetReader)</td></tr>
-<tr class="memdesc:ad0f761c4b775cf52b3675c4a1acaa5fb inherit pub_methods_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a data server with a new dataset reader.  <a href="classDataServerBase.html#ad0f761c4b775cf52b3675c4a1acaa5fb">More...</a><br /></td></tr>
-<tr class="separator:ad0f761c4b775cf52b3675c4a1acaa5fb inherit pub_methods_classDataServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17bcaf286382a9f9982bc7eef415e97 inherit pub_methods_classDataServerBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#aa17bcaf286382a9f9982bc7eef415e97">DataServerBase</a> (std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;datasetReader, const YAML::Node &amp;simSettings)</td></tr>
+<tr class="memdesc:aa17bcaf286382a9f9982bc7eef415e97 inherit pub_methods_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a data server with a new dataset reader.  <a href="classDataServerBase.html#aa17bcaf286382a9f9982bc7eef415e97">More...</a><br /></td></tr>
+<tr class="separator:aa17bcaf286382a9f9982bc7eef415e97 inherit pub_methods_classDataServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -161,13 +166,17 @@ std::unique_ptr&lt; <a class="el" href="structIMUVelocity.html">IMUVelocity</a> 
 std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#ad5e96a0833b89e2d2c21987d3ae4bec7">datasetReaderPtr</a></td></tr>
 <tr class="memdesc:ad5e96a0833b89e2d2c21987d3ae4bec7 inherit pro_attribs_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dataset reader providing measurements. <br /></td></tr>
 <tr class="separator:ad5e96a0833b89e2d2c21987d3ae4bec7 inherit pro_attribs_classDataServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9719b0fa79bef43e0c4908f7cf8cda1c inherit pro_attribs_classDataServerBase"><td class="memItemLeft" align="right" valign="top"><a id="a9719b0fa79bef43e0c4908f7cf8cda1c"></a>
+<a class="el" href="classVIOSimulator.html">VIOSimulator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataServerBase.html#a9719b0fa79bef43e0c4908f7cf8cda1c">simulator</a></td></tr>
+<tr class="memdesc:a9719b0fa79bef43e0c4908f7cf8cda1c inherit pro_attribs_classDataServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The simulator providing substitutions for measurements. <br /></td></tr>
+<tr class="separator:a9719b0fa79bef43e0c4908f7cf8cda1c inherit pro_attribs_classDataServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The simplest implementation of a data server. </p>
 <p>This data server reads the next image and IMU data, and then passes them on as requested. When the image data is requested, the currently stored data is provided and the next data is read in anticipation of the next request. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5f51a21ce325146e8fb3728d014fe1c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f51a21ce325146e8fb3728d014fe1c5">&#9670;&nbsp;</a></span>SimpleDataServer()</h2>
+<a id="a20b9508a18dbc50f920544f2a75ccf48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b9508a18dbc50f920544f2a75ccf48">&#9670;&nbsp;</a></span>SimpleDataServer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,8 +185,18 @@ std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetRead
           <td class="memname">SimpleDataServer::SimpleDataServer </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a> &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>datasetReader</em></td><td>)</td>
+          <td class="paramname"><em>datasetReader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const YAML::Node &amp;&#160;</td>
+          <td class="paramname"><em>simSettings</em> = <code>YAML::Node()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

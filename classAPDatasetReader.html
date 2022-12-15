@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -112,16 +112,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a8bf8be7046aea9eff123f00635b670"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="structIMUVelocity.html">IMUVelocity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPDatasetReader.html#a2a8bf8be7046aea9eff123f00635b670">nextIMU</a> () override</td></tr>
 <tr class="memdesc:a2a8bf8be7046aea9eff123f00635b670"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the next IMU data.  <a href="classAPDatasetReader.html#a2a8bf8be7046aea9eff123f00635b670">More...</a><br /></td></tr>
 <tr class="separator:a2a8bf8be7046aea9eff123f00635b670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1ba8171ac177373a5bab1278b97456c"><td class="memItemLeft" align="right" valign="top"><a id="ac1ba8171ac177373a5bab1278b97456c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPDatasetReader.html#ac1ba8171ac177373a5bab1278b97456c">APDatasetReader</a> (const std::string &amp;datasetFileName, const YAML::Node &amp;simSettings=YAML::Node())</td></tr>
-<tr class="memdesc:ac1ba8171ac177373a5bab1278b97456c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the AP dataset reader from the given dataset directory and simulation settings. <br /></td></tr>
-<tr class="separator:ac1ba8171ac177373a5bab1278b97456c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2680014106b408f38a0676113ebee86"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPDatasetReader.html#ad2680014106b408f38a0676113ebee86">groundtruth</a> () override</td></tr>
+<tr class="memdesc:ad2680014106b408f38a0676113ebee86"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a list of groundtruth poses  <a href="classAPDatasetReader.html#ad2680014106b408f38a0676113ebee86">More...</a><br /></td></tr>
+<tr class="separator:ad2680014106b408f38a0676113ebee86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462fc9fb64c658aafa22eff7c3c8a36a"><td class="memItemLeft" align="right" valign="top"><a id="a462fc9fb64c658aafa22eff7c3c8a36a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPDatasetReader.html#a462fc9fb64c658aafa22eff7c3c8a36a">APDatasetReader</a> (const std::string &amp;datasetFileName)</td></tr>
+<tr class="memdesc:a462fc9fb64c658aafa22eff7c3c8a36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the AP dataset reader from the given dataset directory and simulation settings. <br /></td></tr>
+<tr class="separator:a462fc9fb64c658aafa22eff7c3c8a36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ebc0d06786871d73a34b11a33c216af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPDatasetReader.html#a2ebc0d06786871d73a34b11a33c216af">readCamera</a> (const std::string &amp;cameraFileName) override</td></tr>
 <tr class="memdesc:a2ebc0d06786871d73a34b11a33c216af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a camera file.  <a href="classAPDatasetReader.html#a2ebc0d06786871d73a34b11a33c216af">More...</a><br /></td></tr>
 <tr class="separator:a2ebc0d06786871d73a34b11a33c216af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:acee7ac9afd60b889fec369cf50514d4d"><td class="memItemLeft" align="right" valign="top"><a id="acee7ac9afd60b889fec369cf50514d4d"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPDatasetReader.html#acee7ac9afd60b889fec369cf50514d4d">groundtruthFileName</a></td></tr>
+<tr class="memdesc:acee7ac9afd60b889fec369cf50514d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file containing groundtruth data. <br /></td></tr>
+<tr class="separator:acee7ac9afd60b889fec369cf50514d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868578c983d70be359a4a9a483ed21e0"><td class="memItemLeft" align="right" valign="top"><a id="a868578c983d70be359a4a9a483ed21e0"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAPDatasetReader.html#a868578c983d70be359a4a9a483ed21e0">cam_dir</a></td></tr>
 <tr class="memdesc:a868578c983d70be359a4a9a483ed21e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The directory where camera images are stored. <br /></td></tr>
@@ -138,10 +145,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classDatasetReaderBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classDatasetReaderBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a></td></tr>
-<tr class="memitem:af182be0e933345bedf0febfada2c4d80 inherit pub_attribs_classDatasetReaderBase"><td class="memItemLeft" align="right" valign="top"><a id="af182be0e933345bedf0febfada2c4d80"></a>
-std::unique_ptr&lt; <a class="el" href="classVIOSimulator.html">VIOSimulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatasetReaderBase.html#af182be0e933345bedf0febfada2c4d80">simulator</a></td></tr>
-<tr class="memdesc:af182be0e933345bedf0febfada2c4d80 inherit pub_attribs_classDatasetReaderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simulator that can be used to generate measurements from groundtruth data. <br /></td></tr>
-<tr class="separator:af182be0e933345bedf0febfada2c4d80 inherit pub_attribs_classDatasetReaderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c4e35fd3d1f7f208f3c917e1af6809d inherit pub_attribs_classDatasetReaderBase"><td class="memItemLeft" align="right" valign="top"><a id="a9c4e35fd3d1f7f208f3c917e1af6809d"></a>
 GIFT::GICameraPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatasetReaderBase.html#a9c4e35fd3d1f7f208f3c917e1af6809d">camera</a></td></tr>
 <tr class="memdesc:a9c4e35fd3d1f7f208f3c917e1af6809d inherit pub_attribs_classDatasetReaderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the camera associated with the dataset. <br /></td></tr>
@@ -158,8 +161,38 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The ardupilot dataset reader. </p>
 <p>This class can be used to read datasets in the ArduPilot (AP) format.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Add a clear description of this format. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Add a clear description of this format. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad2680014106b408f38a0676113ebee86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2680014106b408f38a0676113ebee86">&#9670;&nbsp;</a></span>groundtruth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt; APDatasetReader::groundtruth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get a list of groundtruth poses </p>
+<dl class="section return"><dt>Returns</dt><dd>a vector of stamped poses of the groundtruth. The vector is empty if no groundtruth is available. </dd></dl>
+
+<p>Implements <a class="el" href="classDatasetReaderBase.html#a7527439f05953efbffa1a1f0b8accf4b">DatasetReaderBase</a>.</p>
+
+</div>
+</div>
 <a id="a5702f99215e62b615e8ec97414f033e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5702f99215e62b615e8ec97414f033e5">&#9670;&nbsp;</a></span>nextImage()</h2>
 

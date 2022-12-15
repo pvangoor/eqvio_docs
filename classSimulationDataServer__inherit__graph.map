@@ -1,0 +1,4 @@
+<map id="SimulationDataServer" name="SimulationDataServer">
+<area shape="rect" id="node1" title="A data server that provides purely simulated data." alt="" coords="5,80,171,107"/>
+<area shape="rect" id="node2" href="$classDataServerBase.html" title="The common interface of data servers." alt="" coords="25,5,151,32"/>
+</map>

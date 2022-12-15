@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -81,12 +81,6 @@ $(function() {
 <li>accBiasVel
 : <a class="el" href="structIMUVelocity.html#af1d351dcfc6cf0207aec3c00157a1596">IMUVelocity</a>
 </li>
-<li>accumulatedTime
-: <a class="el" href="classVIOFilter.html#a20b7c995868e4b9aa2f97337d8acb3f5">VIOFilter</a>
-</li>
-<li>accumulatedVelocity
-: <a class="el" href="classVIOFilter.html#aa0409eb4257dd0a0dc3d6aaae45406aa">VIOFilter</a>
-</li>
 <li>attitudeProcessVariance
 : <a class="el" href="structVIOFilter_1_1Settings.html#ad39d7eca1b68d75200ea9460d274e576">VIOFilter::Settings</a>
 </li>
@@ -105,6 +99,9 @@ $(function() {
 </li>
 <li>biasAccelProcessVariance
 : <a class="el" href="structVIOFilter_1_1Settings.html#a9fa5a17ff00e1d8eb58c0736a27c698b">VIOFilter::Settings</a>
+</li>
+<li>biasConsistencyFile
+: <a class="el" href="classVIOWriter.html#af188612d9b4d852151e128099ec2b977">VIOWriter</a>
 </li>
 <li>biasFile
 : <a class="el" href="classVIOWriter.html#af21cc1e45ce83d8eecef156fda1b9c50">VIOWriter</a>
@@ -131,6 +128,9 @@ $(function() {
 </li>
 <li>cameraAttitudeProcessVariance
 : <a class="el" href="structVIOFilter_1_1Settings.html#a1f399d7ef98251311b20e36e5cbc204a">VIOFilter::Settings</a>
+</li>
+<li>cameraConsistencyFile
+: <a class="el" href="classVIOWriter.html#a9fd998b0b57ba6042eb9bcc15be620a1">VIOWriter</a>
 </li>
 <li>cameraExtrinsics
 : <a class="el" href="classDatasetReaderBase.html#aaf505c57437cede118c1f968999ce9fa">DatasetReaderBase</a>
@@ -180,19 +180,13 @@ $(function() {
 : <a class="el" href="structVIOFilter_1_1Settings.html#af802c5024263028c9274d8649212e14d">VIOFilter::Settings</a>
 </li>
 <li>coordinateSuite
-: <a class="el" href="classVIOFilter.html#a02dc49198899d905ca12866c1a87ba61">VIOFilter</a>
+: <a class="el" href="structVIO__eqf.html#ad3509a39c49207b638eaca7655c5d180">VIO_eqf</a>
 </li>
 <li>currentLoopTimingData
 : <a class="el" href="classLoopTimer.html#a27ff259eeee9c52bd39e1cf2b4ecd104">LoopTimer</a>
 </li>
 <li>currentTime
-: <a class="el" href="classVIOFilter.html#ae57ce0b5e3712eda09016da4801dd82e">VIOFilter</a>
-</li>
-<li>currentTrackingId
-: <a class="el" href="classVIOSimulator.html#a8df29e54846fd455e82bf6421611b0f2">VIOSimulator</a>
-</li>
-<li>currentVelocity
-: <a class="el" href="classVIOFilter.html#a69b579aa1919ed93cce8577eb781fe4c">VIOFilter</a>
+: <a class="el" href="structVIO__eqf.html#a9942f0cec7e84d501a82e3f9f51fe3e5">VIO_eqf</a>
 </li>
 </ul>
 
@@ -221,16 +215,20 @@ $(function() {
 <li>featuresFile
 : <a class="el" href="classVIOWriter.html#a96ceeaf1ee5be7534180b13ebb8ba385">VIOWriter</a>
 </li>
-<li>fieldOfView
-: <a class="el" href="classVIOSimulator.html#af0f86da7206d2cb791042f2f93937433">VIOSimulator</a>
-</li>
 <li>filePtr
 : <a class="el" href="classCSVFile.html#a4345ca71d0d997e5b2edfdf2bee9b1c2">CSVFile</a>
+</li>
+<li>filterState
+: <a class="el" href="classVIOFilter.html#a535f3d988b9487899ebdcc703b6c40bc">VIOFilter</a>
 </li>
 </ul>
 
 
 <h3><a id="index_g"></a>- g -</h3><ul>
+<li>groundtruthFileName
+: <a class="el" href="classAPDatasetReader.html#acee7ac9afd60b889fec369cf50514d4d">APDatasetReader</a>
+, <a class="el" href="classASLDatasetReader.html#a363acbe2a27882d6eb6b19c31f79a348">ASLDatasetReader</a>
+</li>
 <li>gyr
 : <a class="el" href="structIMUVelocity.html#a90df9bbde5a04bd50d514fb619ef8e22">IMUVelocity</a>
 </li>
@@ -257,6 +255,9 @@ $(function() {
 <li>imageDataFinished
 : <a class="el" href="classThreadedDataServer.html#adb75ec45f09b24345e50d68025ca56ac">ThreadedDataServer</a>
 </li>
+<li>imageMeasCount
+: <a class="el" href="classSimulationDataServer.html#ad2dbcd3db50c39d17843caf600753933">SimulationDataServer</a>
+</li>
 <li>imageQueue
 : <a class="el" href="classThreadedDataServer.html#a26d4efbd5bf0e2a915cb8a50ddff71af">ThreadedDataServer</a>
 </li>
@@ -267,6 +268,12 @@ $(function() {
 </li>
 <li>IMUDataFinished
 : <a class="el" href="classThreadedDataServer.html#a7dc16c9a2d3f4121a6b26362c52145a8">ThreadedDataServer</a>
+</li>
+<li>imuFreq
+: <a class="el" href="classSimulationDataServer.html#ab008c7c548dab5aa1cdf6b50900de5b4">SimulationDataServer</a>
+</li>
+<li>imuMeasCount
+: <a class="el" href="classSimulationDataServer.html#a99c3480903e5401de3b0acc6facad549">SimulationDataServer</a>
 </li>
 <li>IMUQueue
 : <a class="el" href="classThreadedDataServer.html#a012e88c55a5b1e961fea7ee0caa66d72">ThreadedDataServer</a>
@@ -294,6 +301,9 @@ $(function() {
 </li>
 <li>initialisedFlag
 : <a class="el" href="classVIOFilter.html#adcaa8756b5ee9c0a531b8ff351bd3cc8">VIOFilter</a>
+</li>
+<li>initialPointDepthVariance
+: <a class="el" href="structVIOFilter_1_1Settings.html#a30b5f4973a94c1e5b3b60c0242b71d11">VIOFilter::Settings</a>
 </li>
 <li>initialPointVariance
 : <a class="el" href="structVIOFilter_1_1Settings.html#a5fb62d6977819548d953e7ac904bfcf7">VIOFilter::Settings</a>
@@ -323,6 +333,9 @@ $(function() {
 
 
 <h3><a id="index_l"></a>- l -</h3><ul>
+<li>landmarkErrorFile
+: <a class="el" href="classVIOWriter.html#a40ffa58375011d8712047e58eee11467">VIOWriter</a>
+</li>
 <li>liftInnovation
 : <a class="el" href="structEqFCoordinateSuite.html#ac3853e0db7279cf60567a723c6957422">EqFCoordinateSuite</a>
 </li>
@@ -345,6 +358,9 @@ $(function() {
 <li>maxIMUQueueSize
 : <a class="el" href="classThreadedDataServer.html#a35570a289f97dc11dce3c22279e41b4d">ThreadedDataServer</a>
 </li>
+<li>maxSimulationTime
+: <a class="el" href="classSimulationDataServer.html#a052063bd72e6982a766a64c8e1da3682">SimulationDataServer</a>
+</li>
 <li>measurementNoise
 : <a class="el" href="structVIOFilter_1_1Settings.html#a39740ed78dc619b1fba1bac1c56c8a1d">VIOFilter::Settings</a>
 </li>
@@ -352,6 +368,9 @@ $(function() {
 
 
 <h3><a id="index_n"></a>- n -</h3><ul>
+<li>neesFile
+: <a class="el" href="classVIOWriter.html#a1c8857c50e812aa660ab1c060a8ad98e">VIOWriter</a>
+</li>
 <li>nextImageData
 : <a class="el" href="classSimpleDataServer.html#ade3eea52768e9e8cf22ac23fbbcfa232">SimpleDataServer</a>
 </li>
@@ -381,9 +400,6 @@ $(function() {
 <li>p
 : <a class="el" href="structLandmark.html#a938efcffefefd74dcfaf0bbbc1f7ca51">Landmark</a>
 </li>
-<li>pointId2TrackingId
-: <a class="el" href="classVIOSimulator.html#a442317c3dff0ba9452121d99d9877a43">VIOSimulator</a>
-</li>
 <li>pointProcessVariance
 : <a class="el" href="structVIOFilter_1_1Settings.html#a40728027b803fb854c9fd3915e7456b0">VIOFilter::Settings</a>
 </li>
@@ -393,6 +409,9 @@ $(function() {
 <li>pose
 : <a class="el" href="structStampedPose.html#a6420251d92d53158e17b8f690ea4b85d">StampedPose</a>
 , <a class="el" href="structVIOSensorState.html#a868e3ff22618c8154aa7e5476b80f62d">VIOSensorState</a>
+</li>
+<li>poseConsistencyFile
+: <a class="el" href="classVIOWriter.html#aac0e0f6d15d9c1de2b05ff5197b94618">VIOWriter</a>
 </li>
 <li>poses
 : <a class="el" href="classVIOSimulator.html#a68c7a40b8ad734eeba43f604a420f8df">VIOSimulator</a>
@@ -420,6 +439,9 @@ $(function() {
 <li>reader
 : <a class="el" href="classCSVFile.html#a4861922a8c63d7b93f9b7c3f633b1fac">CSVFile</a>
 </li>
+<li>removeLostLandmarks
+: <a class="el" href="structVIOFilter_1_1Settings.html#a61e4fb1ceb07b15d88663626888d44e1">VIOFilter::Settings</a>
+</li>
 </ul>
 
 
@@ -431,10 +453,10 @@ $(function() {
 : <a class="el" href="classVIOFilter.html#aad5e643d245dee8489cbae3dd5f7a2fa">VIOFilter</a>
 </li>
 <li>Sigma
-: <a class="el" href="classVIOFilter.html#aba1648b12d1d904531fa98dbea53b4fa">VIOFilter</a>
+: <a class="el" href="structVIO__eqf.html#ace633c9f88fbdeaa093c251dbd0e4985">VIO_eqf</a>
 </li>
 <li>simulator
-: <a class="el" href="classDatasetReaderBase.html#af182be0e933345bedf0febfada2c4d80">DatasetReaderBase</a>
+: <a class="el" href="classDataServerBase.html#a9719b0fa79bef43e0c4908f7cf8cda1c">DataServerBase</a>
 </li>
 <li>stamp
 : <a class="el" href="structIMUVelocity.html#a682efb767d56769757ac55f5409f5f6b">IMUVelocity</a>
@@ -469,11 +491,11 @@ $(function() {
 <li>timingFile
 : <a class="el" href="classVIOWriter.html#aca9593389b5a25394cabbd12a577f0b4">VIOWriter</a>
 </li>
-<li>timingFileHeaderIsWritten
-: <a class="el" href="classVIOWriter.html#a108788daa0705db6f39413ce8887b93c">VIOWriter</a>
-</li>
 <li>timings
 : <a class="el" href="structLoopTimer_1_1LoopTimingData.html#a05b6dcc6f90911e5fff43e7e11892cfb">LoopTimer::LoopTimingData</a>
+</li>
+<li>trueStateFile
+: <a class="el" href="classVIOWriter.html#acf72f3e2bd49dda1c08d37d3db74b922">VIOWriter</a>
 </li>
 </ul>
 
@@ -493,6 +515,9 @@ $(function() {
 </li>
 <li>useDiscreteInnovationLift
 : <a class="el" href="structVIOFilter_1_1Settings.html#a4f435fa6fbfd7b6ad137d4ab51ef2304">VIOFilter::Settings</a>
+</li>
+<li>useDiscreteStateMatrix
+: <a class="el" href="structVIOFilter_1_1Settings.html#ab553f64531f3b7992ccba9570a26694a">VIOFilter::Settings</a>
 </li>
 <li>useDiscreteVelocityLift
 : <a class="el" href="structVIOFilter_1_1Settings.html#a0949b3403a8c4976450097ecb8f22d4f">VIOFilter::Settings</a>
@@ -525,6 +550,9 @@ $(function() {
 <li>velocity
 : <a class="el" href="structVIOSensorState.html#af27a8eecf70af34a3b7c17ae403a83de">VIOSensorState</a>
 </li>
+<li>velocityBuffer
+: <a class="el" href="classVIOFilter.html#a79f23cea5184559b8ede46bd40e00098">VIOFilter</a>
+</li>
 <li>velocityProcessVariance
 : <a class="el" href="structVIOFilter_1_1Settings.html#a13226f957cc8e3a774a66b0a519e1878">VIOFilter::Settings</a>
 </li>
@@ -546,10 +574,10 @@ $(function() {
 
 <h3><a id="index_x"></a>- x -</h3><ul>
 <li>X
-: <a class="el" href="classVIOFilter.html#a1d466f01db88175d31aa819c44da2fb3">VIOFilter</a>
+: <a class="el" href="structVIO__eqf.html#aad265bcda8fb7f9b7311275dc670c73f">VIO_eqf</a>
 </li>
 <li>xi0
-: <a class="el" href="classVIOFilter.html#a880b74d04b065f33a42e11291ace26f2">VIOFilter</a>
+: <a class="el" href="structVIO__eqf.html#a02d168379249862ed0fba29caf8da8a5">VIO_eqf</a>
 </li>
 </ul>
 </div><!-- contents -->

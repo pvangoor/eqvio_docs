@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x_267',['X',['../classVIOFilter.html#a1d466f01db88175d31aa819c44da2fb3',1,'VIOFilter']]],
-  ['xi0_268',['xi0',['../classVIOFilter.html#a880b74d04b065f33a42e11291ace26f2',1,'VIOFilter']]]
+  ['x_292',['X',['../structVIO__eqf.html#aad265bcda8fb7f9b7311275dc670c73f',1,'VIO_eqf']]],
+  ['xi0_293',['xi0',['../structVIO__eqf.html#a02d168379249862ed0fba29caf8da8a5',1,'VIO_eqf']]]
 ];

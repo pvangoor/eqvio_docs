@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -79,18 +79,19 @@ Dependencies</h1>
 <ul>
 <li>Eigen 3: <code>sudo apt install libeigen3-dev</code></li>
 <li>Yaml-cpp: <code>sudo apt install libyaml-cpp-dev</code></li>
-<li>GIFT: <code><a href="https://github.com/pvangoor/GIFT">https://github.com/pvangoor/GIFT</a></code></li>
+<li>GIFT: <a href="https://github.com/pvangoor/GIFT">https://github.com/pvangoor/GIFT</a></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Optional Dependencis</h2>
 <ul>
 <li>FreeGLUT (for visualisations): <code>sudo apt install freeglut3-dev</code></li>
-<li>ROS (for reading ROS-Bags): <code><a href="http://wiki.ros.org/ROS/Installation">http://wiki.ros.org/ROS/Installation</a></code></li>
+<li>ROS (for reading ROS-Bags): <a href="http://wiki.ros.org/ROS/Installation">http://wiki.ros.org/ROS/Installation</a></li>
 <li>Doxygen (for documentation): <code>sudo apt install doxygen</code></li>
 </ul>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Build Overview</h1>
-<p>EqVIO is designed to be built as a cmake project rather than a ROS package. Assuming all prerequisites are installed and you are in the root folder of the repository, then you can follow these steps to build: </p><div class="fragment"><div class="line">mkdir build</div>
+<p>EqVIO is designed to be built as a cmake project rather than a ROS package. Assuming all prerequisites are installed and you are in the root folder of the repository, then you can follow these steps to build:</p>
+<div class="fragment"><div class="line">mkdir build</div>
 <div class="line">cd build</div>
 <div class="line">cmake ..</div>
 <div class="line">cmake --build . -j8</div>

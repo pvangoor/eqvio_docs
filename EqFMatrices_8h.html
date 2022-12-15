@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>eqvio: include/eqvio/EqFMatrices.h File Reference</title>
+<title>eqvio: include/eqvio/mathematical/EqFMatrices.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -69,58 +69,68 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_58a5fff688f7ed5c943636dffb8771bf.html">eqvio</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_58a5fff688f7ed5c943636dffb8771bf.html">eqvio</a></li><li class="navelem"><a class="el" href="dir_32351f1312968f0fd7cf7c5148d70a94.html">mathematical</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">EqFMatrices.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="VIOGroup_8h_source.html">eqvio/VIOGroup.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="VIOGroup_8h_source.html">eqvio/mathematical/VIOGroup.h</a>&quot;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for EqFMatrices.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="EqFMatrices_8h__incl.png" border="0" usemap="#include_2eqvio_2EqFMatrices_8h" alt=""/></div>
-<map name="include_2eqvio_2EqFMatrices_8h" id="include_2eqvio_2EqFMatrices_8h">
-<area shape="rect" title=" " alt="" coords="823,5,1028,32"/>
-<area shape="rect" href="VIOGroup_8h.html" title=" " alt="" coords="333,80,469,107"/>
-<area shape="rect" title=" " alt="" coords="1378,379,1465,405"/>
-<area shape="rect" href="VIOState_8h.html" title=" " alt="" coords="804,155,935,181"/>
-<area shape="rect" title=" " alt="" coords="621,453,715,480"/>
-<area shape="rect" href="CSVReader_8h_source.html" title=" " alt="" coords="375,304,547,331"/>
-<area shape="rect" title=" " alt="" coords="5,453,109,480"/>
-<area shape="rect" title=" " alt="" coords="623,304,769,331"/>
-<area shape="rect" href="Geometry_8h.html" title=" " alt="" coords="1165,304,1302,331"/>
-<area shape="rect" href="IMUVelocity_8h.html" title=" " alt="" coords="490,229,641,256"/>
-<area shape="rect" title=" " alt="" coords="1250,453,1313,480"/>
-<area shape="rect" href="VisionMeasurement_8h_source.html" title=" " alt="" coords="767,229,971,256"/>
-<area shape="rect" title=" " alt="" coords="1063,304,1140,331"/>
-<area shape="rect" title=" " alt="" coords="995,229,1071,256"/>
-<area shape="rect" title=" " alt="" coords="1029,453,1169,480"/>
-<area shape="rect" title=" " alt="" coords="798,453,890,480"/>
-<area shape="rect" href="CSVLine_8h.html" title=" " alt="" coords="334,379,487,405"/>
-<area shape="rect" title=" " alt="" coords="534,453,597,480"/>
-<area shape="rect" title=" " alt="" coords="134,453,207,480"/>
-<area shape="rect" title=" " alt="" coords="232,453,307,480"/>
-<area shape="rect" title=" " alt="" coords="331,453,389,480"/>
-<area shape="rect" title=" " alt="" coords="413,453,509,480"/>
-<area shape="rect" title=" " alt="" coords="793,304,964,331"/>
-<area shape="rect" title=" " alt="" coords="988,304,1039,331"/>
+<div class="center"><img src="EqFMatrices_8h__incl.png" border="0" usemap="#include_2eqvio_2mathematical_2EqFMatrices_8h" alt=""/></div>
+<map name="include_2eqvio_2mathematical_2EqFMatrices_8h" id="include_2eqvio_2mathematical_2EqFMatrices_8h">
+<area shape="rect" title=" " alt="" coords="241,5,445,47"/>
+<area shape="rect" href="VIOGroup_8h.html" title=" " alt="" coords="662,95,815,136"/>
+<area shape="rect" title=" " alt="" coords="94,452,181,479"/>
+<area shape="rect" href="CSVReader_8h_source.html" title=" " alt="" coords="865,370,1037,397"/>
+<area shape="rect" title=" " alt="" coords="1078,527,1173,553"/>
+<area shape="rect" title=" " alt="" coords="29,527,133,553"/>
+<area shape="rect" href="VIOState_8h.html" title=" " alt="" coords="662,184,815,225"/>
+<area shape="rect" href="CSVLine_8h.html" title=" " alt="" coords="654,452,807,479"/>
+<area shape="rect" title=" " alt="" coords="607,527,670,553"/>
+<area shape="rect" title=" " alt="" coords="694,527,767,553"/>
+<area shape="rect" title=" " alt="" coords="792,527,867,553"/>
+<area shape="rect" title=" " alt="" coords="891,527,949,553"/>
+<area shape="rect" title=" " alt="" coords="179,527,271,553"/>
+<area shape="rect" title=" " alt="" coords="986,527,1049,553"/>
+<area shape="rect" title=" " alt="" coords="298,527,438,553"/>
+<area shape="rect" title=" " alt="" coords="487,527,583,553"/>
+<area shape="rect" title=" " alt="" coords="693,370,840,397"/>
+<area shape="rect" href="Geometry_8h.html" title=" " alt="" coords="145,363,298,404"/>
+<area shape="rect" href="IMUVelocity_8h.html" title=" " alt="" coords="719,273,873,315"/>
+<area shape="rect" href="VisionMeasurement_8h_source.html" title=" " alt="" coords="425,273,593,315"/>
+<area shape="rect" title=" " alt="" coords="592,370,669,397"/>
+<area shape="rect" title=" " alt="" coords="897,281,973,307"/>
+<area shape="rect" title=" " alt="" coords="397,370,568,397"/>
+<area shape="rect" title=" " alt="" coords="323,370,373,397"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="EqFMatrices_8h__dep__incl.png" border="0" usemap="#include_2eqvio_2EqFMatrices_8hdep" alt=""/></div>
-<map name="include_2eqvio_2EqFMatrices_8hdep" id="include_2eqvio_2EqFMatrices_8hdep">
-<area shape="rect" title=" " alt="" coords="19,5,225,32"/>
-<area shape="rect" href="VIOFilter_8h_source.html" title=" " alt="" coords="32,80,212,107"/>
-<area shape="rect" href="VIOFilterSettings_8h_source.html" title=" " alt="" coords="5,155,239,181"/>
+<div class="center"><img src="EqFMatrices_8h__dep__incl.png" border="0" usemap="#include_2eqvio_2mathematical_2EqFMatrices_8hdep" alt=""/></div>
+<map name="include_2eqvio_2mathematical_2EqFMatrices_8hdep" id="include_2eqvio_2mathematical_2EqFMatrices_8hdep">
+<area shape="rect" title=" " alt="" coords="271,5,475,47"/>
+<area shape="rect" href="VIO__eqf_8h_source.html" title=" " alt="" coords="341,95,545,136"/>
+<area shape="rect" href="VIOFilter_8h_source.html" title=" " alt="" coords="213,184,393,211"/>
+<area shape="rect" href="VIOWriter_8h_source.html" title=" " alt="" coords="417,184,605,211"/>
+<area shape="rect" href="VIOFilterSettings_8h_source.html" title=" " alt="" coords="187,259,420,285"/>
+<area shape="rect" href="VIOSimulator_8h_source.html" title=" " alt="" coords="198,333,409,360"/>
+<area shape="rect" href="DataServerBase_8h_source.html" title=" " alt="" coords="212,408,395,449"/>
+<area shape="rect" href="SimpleDataServer_8h_source.html" title=" " alt="" coords="5,497,188,539"/>
+<area shape="rect" href="ThreadedDataServer_8h_source.html" title=" " alt="" coords="212,497,395,539"/>
+<area shape="rect" href="SimulationDataServer_8h_source.html" title=" " alt="" coords="419,497,601,539"/>
+<area shape="rect" href="dataservers_8h_source.html" title=" " alt="" coords="212,587,395,628"/>
 </map>
 </div>
 </div>
@@ -131,6 +141,21 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEqFCoordinateSuite.html">EqFCoordinateSuite</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The suite of functions associated with a choice of coordinates for the EqF.  <a href="structEqFCoordinateSuite.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a318fdf8c6c9178bbcfc69ca8dcec9f9d"><td class="memItemLeft" align="right" valign="top"><a id="a318fdf8c6c9178bbcfc69ca8dcec9f9d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EqFMatrices_8h.html#a318fdf8c6c9178bbcfc69ca8dcec9f9d">CoordinateChoice</a> { <b>Euclidean</b>, 
+<b>InvDepth</b>, 
+<b>Normal</b>
+ }</td></tr>
+<tr class="memdesc:a318fdf8c6c9178bbcfc69ca8dcec9f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local coordinate charts available to the EqF. <br /></td></tr>
+<tr class="separator:a318fdf8c6c9178bbcfc69ca8dcec9f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad1aecf5ca6fc2f66c802f988e038f7a2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structEqFCoordinateSuite.html">EqFCoordinateSuite</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EqFMatrices_8h.html#ad1aecf5ca6fc2f66c802f988e038f7a2">getCoordinates</a> (const <a class="el" href="EqFMatrices_8h.html#a318fdf8c6c9178bbcfc69ca8dcec9f9d">CoordinateChoice</a> &amp;coordinateChoice)</td></tr>
+<tr class="memdesc:ad1aecf5ca6fc2f66c802f988e038f7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide coordinates based on the coordinate choice.  <a href="EqFMatrices_8h.html#ad1aecf5ca6fc2f66c802f988e038f7a2">More...</a><br /></td></tr>
+<tr class="separator:ad1aecf5ca6fc2f66c802f988e038f7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -147,6 +172,42 @@ const <a class="el" href="structEqFCoordinateSuite.html">EqFCoordinateSuite</a>&
 <tr class="memdesc:a013f9bab9ac20a097ebbdf524eb5f17c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A suite of functions for the EqF using Normal coordinates. <br /></td></tr>
 <tr class="separator:a013f9bab9ac20a097ebbdf524eb5f17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad1aecf5ca6fc2f66c802f988e038f7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1aecf5ca6fc2f66c802f988e038f7a2">&#9670;&nbsp;</a></span>getCoordinates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structEqFCoordinateSuite.html">EqFCoordinateSuite</a>* getCoordinates </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="EqFMatrices_8h.html#a318fdf8c6c9178bbcfc69ca8dcec9f9d">CoordinateChoice</a> &amp;&#160;</td>
+          <td class="paramname"><em>coordinateChoice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Provide coordinates based on the coordinate choice. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coordinateChoice</td><td>The chosen coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the coordinate implementation </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

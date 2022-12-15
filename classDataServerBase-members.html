@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -78,16 +78,18 @@ $(function() {
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#a1eb94b595e6c57bd1e54b21e4c2793db">camera</a>() const</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classDataServerBase.html#a0e862e94a8e7e46304eebbc6adc0f383">cameraExtrinsics</a>() const</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#ad0f761c4b775cf52b3675c4a1acaa5fb">DataServerBase</a>(std::unique_ptr&lt; DatasetReaderBase &gt; &amp;&amp;datasetReader)</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#aa17bcaf286382a9f9982bc7eef415e97">DataServerBase</a>(std::unique_ptr&lt; DatasetReaderBase &gt; &amp;&amp;datasetReader, const YAML::Node &amp;simSettings)</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>DataServerBase</b>()=default (defined in <a class="el" href="classDataServerBase.html">DataServerBase</a>)</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#ad5e96a0833b89e2d2c21987d3ae4bec7">datasetReaderPtr</a></td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classDataServerBase.html#a933a15afcc135987dfd2fcad8f10e334">getImage</a>()=0</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#a563b50dcc1e250d1ce364717a8e6d295">getIMU</a>()=0</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classDataServerBase.html#a68e2285638296b73c450d7d0dd3fe07d">getSimIMU</a>()</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#ae54100ae31939fc68ab7f630038639f7">getSimVision</a>()</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classDataServerBase.html#a661a013d30da5466cd83ff2c9c59625c">nextMeasurementType</a>() const =0</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#abeac7db4bd1499f687d33d94097ec364">nextTime</a>() const =0</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classDataServerBase.html#ad80bd9599ed7827a6e70c59fd368234a">readCamera</a>(const std::string &amp;cameraFileName)</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>groundTruthPose</b>(const double stamp=-1) const (defined in <a class="el" href="classDataServerBase.html">DataServerBase</a>)</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#a661a013d30da5466cd83ff2c9c59625c">nextMeasurementType</a>() const =0</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDataServerBase.html#abeac7db4bd1499f687d33d94097ec364">nextTime</a>() const =0</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDataServerBase.html#ad80bd9599ed7827a6e70c59fd368234a">readCamera</a>(const std::string &amp;cameraFileName)</td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classDataServerBase.html#a9719b0fa79bef43e0c4908f7cf8cda1c">simulator</a></td><td class="entry"><a class="el" href="classDataServerBase.html">DataServerBase</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

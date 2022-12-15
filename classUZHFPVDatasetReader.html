@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -106,19 +106,22 @@ Collaboration diagram for UZHFPVDatasetReader:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c505585f8b03a7c4259d5a73414c330"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="structStampedImage.html">StampedImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#a4c505585f8b03a7c4259d5a73414c330">nextImage</a> ()</td></tr>
-<tr class="memdesc:a4c505585f8b03a7c4259d5a73414c330"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the next image data.  <a href="classUZHFPVDatasetReader.html#a4c505585f8b03a7c4259d5a73414c330">More...</a><br /></td></tr>
-<tr class="separator:a4c505585f8b03a7c4259d5a73414c330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56e187ebe0c750ee12bac4adf4cb0813"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="structIMUVelocity.html">IMUVelocity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#a56e187ebe0c750ee12bac4adf4cb0813">nextIMU</a> ()</td></tr>
-<tr class="memdesc:a56e187ebe0c750ee12bac4adf4cb0813"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the next IMU data.  <a href="classUZHFPVDatasetReader.html#a56e187ebe0c750ee12bac4adf4cb0813">More...</a><br /></td></tr>
-<tr class="separator:a56e187ebe0c750ee12bac4adf4cb0813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb48f60c25449d3a44382dc432b0d6e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#abb48f60c25449d3a44382dc432b0d6e1">readCamera</a> (const std::string &amp;cameraFileName)</td></tr>
-<tr class="memdesc:abb48f60c25449d3a44382dc432b0d6e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a camera file.  <a href="classUZHFPVDatasetReader.html#abb48f60c25449d3a44382dc432b0d6e1">More...</a><br /></td></tr>
-<tr class="separator:abb48f60c25449d3a44382dc432b0d6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3caecd61d2b98606670b0c1230c0a57b"><td class="memItemLeft" align="right" valign="top"><a id="a3caecd61d2b98606670b0c1230c0a57b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#a3caecd61d2b98606670b0c1230c0a57b">UZHFPVDatasetReader</a> (const std::string &amp;datasetFileName, const YAML::Node &amp;simSettings=YAML::Node())</td></tr>
-<tr class="memdesc:a3caecd61d2b98606670b0c1230c0a57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the ASL dataset reader from the given dataset directory and simulation settings. <br /></td></tr>
-<tr class="separator:a3caecd61d2b98606670b0c1230c0a57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6744bf025806c1b4620bb786ba5642c"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="structStampedImage.html">StampedImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#ab6744bf025806c1b4620bb786ba5642c">nextImage</a> () override</td></tr>
+<tr class="memdesc:ab6744bf025806c1b4620bb786ba5642c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the next image data.  <a href="classUZHFPVDatasetReader.html#ab6744bf025806c1b4620bb786ba5642c">More...</a><br /></td></tr>
+<tr class="separator:ab6744bf025806c1b4620bb786ba5642c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abefd185002f88bd60173d86b00e2abab"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="structIMUVelocity.html">IMUVelocity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#abefd185002f88bd60173d86b00e2abab">nextIMU</a> () override</td></tr>
+<tr class="memdesc:abefd185002f88bd60173d86b00e2abab"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the next IMU data.  <a href="classUZHFPVDatasetReader.html#abefd185002f88bd60173d86b00e2abab">More...</a><br /></td></tr>
+<tr class="separator:abefd185002f88bd60173d86b00e2abab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0680f66792c188344b6fa7edde0a4e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#a4c0680f66792c188344b6fa7edde0a4e">readCamera</a> (const std::string &amp;cameraFileName) override</td></tr>
+<tr class="memdesc:a4c0680f66792c188344b6fa7edde0a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a camera file.  <a href="classUZHFPVDatasetReader.html#a4c0680f66792c188344b6fa7edde0a4e">More...</a><br /></td></tr>
+<tr class="separator:a4c0680f66792c188344b6fa7edde0a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d849f39f855bd81756546b8e3d3436"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#ab2d849f39f855bd81756546b8e3d3436">groundtruth</a> () override</td></tr>
+<tr class="memdesc:ab2d849f39f855bd81756546b8e3d3436"><td class="mdescLeft">&#160;</td><td class="mdescRight">get a list of groundtruth poses  <a href="classUZHFPVDatasetReader.html#ab2d849f39f855bd81756546b8e3d3436">More...</a><br /></td></tr>
+<tr class="separator:ab2d849f39f855bd81756546b8e3d3436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c4db6bdf325059816f4340f46f34b1"><td class="memItemLeft" align="right" valign="top"><a id="a48c4db6bdf325059816f4340f46f34b1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUZHFPVDatasetReader.html#a48c4db6bdf325059816f4340f46f34b1">UZHFPVDatasetReader</a> (const std::string &amp;datasetFileName)</td></tr>
+<tr class="memdesc:a48c4db6bdf325059816f4340f46f34b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the ASL dataset reader from the given dataset directory and simulation settings. <br /></td></tr>
+<tr class="separator:a48c4db6bdf325059816f4340f46f34b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -138,10 +141,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_classDatasetReaderBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classDatasetReaderBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classDatasetReaderBase.html">DatasetReaderBase</a></td></tr>
-<tr class="memitem:af182be0e933345bedf0febfada2c4d80 inherit pub_attribs_classDatasetReaderBase"><td class="memItemLeft" align="right" valign="top"><a id="af182be0e933345bedf0febfada2c4d80"></a>
-std::unique_ptr&lt; <a class="el" href="classVIOSimulator.html">VIOSimulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatasetReaderBase.html#af182be0e933345bedf0febfada2c4d80">simulator</a></td></tr>
-<tr class="memdesc:af182be0e933345bedf0febfada2c4d80 inherit pub_attribs_classDatasetReaderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simulator that can be used to generate measurements from groundtruth data. <br /></td></tr>
-<tr class="separator:af182be0e933345bedf0febfada2c4d80 inherit pub_attribs_classDatasetReaderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c4e35fd3d1f7f208f3c917e1af6809d inherit pub_attribs_classDatasetReaderBase"><td class="memItemLeft" align="right" valign="top"><a id="a9c4e35fd3d1f7f208f3c917e1af6809d"></a>
 GIFT::GICameraPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDatasetReaderBase.html#a9c4e35fd3d1f7f208f3c917e1af6809d">camera</a></td></tr>
 <tr class="memdesc:a9c4e35fd3d1f7f208f3c917e1af6809d inherit pub_attribs_classDatasetReaderBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shared pointer to the camera associated with the dataset. <br /></td></tr>
@@ -159,8 +158,38 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <div class="textblock"><p>The UZH-FPV dataset reader. </p>
 <p>This class can be used to read datasets in the UZH-FPV format. For details, please see <a href="https://fpv.ifi.uzh.ch/">UZH-FPV</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4c505585f8b03a7c4259d5a73414c330"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c505585f8b03a7c4259d5a73414c330">&#9670;&nbsp;</a></span>nextImage()</h2>
+<a id="ab2d849f39f855bd81756546b8e3d3436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d849f39f855bd81756546b8e3d3436">&#9670;&nbsp;</a></span>groundtruth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="structStampedPose.html">StampedPose</a> &gt; UZHFPVDatasetReader::groundtruth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get a list of groundtruth poses </p>
+<dl class="section return"><dt>Returns</dt><dd>a vector of stamped poses of the groundtruth. The vector is empty if no groundtruth is available. </dd></dl>
+
+<p>Implements <a class="el" href="classDatasetReaderBase.html#a7527439f05953efbffa1a1f0b8accf4b">DatasetReaderBase</a>.</p>
+
+</div>
+</div>
+<a id="ab6744bf025806c1b4620bb786ba5642c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6744bf025806c1b4620bb786ba5642c">&#9670;&nbsp;</a></span>nextImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +206,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -189,8 +218,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="a56e187ebe0c750ee12bac4adf4cb0813"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56e187ebe0c750ee12bac4adf4cb0813">&#9670;&nbsp;</a></span>nextIMU()</h2>
+<a id="abefd185002f88bd60173d86b00e2abab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abefd185002f88bd60173d86b00e2abab">&#9670;&nbsp;</a></span>nextIMU()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +236,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -219,8 +248,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 
 </div>
 </div>
-<a id="abb48f60c25449d3a44382dc432b0d6e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb48f60c25449d3a44382dc432b0d6e1">&#9670;&nbsp;</a></span>readCamera()</h2>
+<a id="a4c0680f66792c188344b6fa7edde0a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c0680f66792c188344b6fa7edde0a4e">&#9670;&nbsp;</a></span>readCamera()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,7 +267,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

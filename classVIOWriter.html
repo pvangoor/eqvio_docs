@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">eqvio
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">1.1</span>
    </div>
   </td>
  </tr>
@@ -87,16 +87,16 @@ Collaboration diagram for VIOWriter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVIOWriter__coll__graph.png" border="0" usemap="#VIOWriter_coll__map" alt="Collaboration graph"/></div>
 <map name="VIOWriter_coll__map" id="VIOWriter_coll__map">
-<area shape="rect" title="A class to handle writing output for the VIO system." alt="" coords="7,168,93,195"/>
+<area shape="rect" title="A class to handle writing output for the VIO system." alt="" coords="7,241,93,268"/>
 <area shape="rect" href="classaofstream.html" title="asynchronous output file stream" alt="" coords="5,5,95,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a13e99958d8499fffd6a18650e99c3a89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a13e99958d8499fffd6a18650e99c3a89">VIOWriter</a> (std::string outputDir)</td></tr>
-<tr class="memdesc:a13e99958d8499fffd6a18650e99c3a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a number of files in the output directory to record VIO data.  <a href="classVIOWriter.html#a13e99958d8499fffd6a18650e99c3a89">More...</a><br /></td></tr>
-<tr class="separator:a13e99958d8499fffd6a18650e99c3a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32409f01c25447ddea678a8dd7609ac8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a32409f01c25447ddea678a8dd7609ac8">VIOWriter</a> (const std::string &amp;outputDir)</td></tr>
+<tr class="memdesc:a32409f01c25447ddea678a8dd7609ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a number of files in the output directory to record VIO data.  <a href="classVIOWriter.html#a32409f01c25447ddea678a8dd7609ac8">More...</a><br /></td></tr>
+<tr class="separator:a32409f01c25447ddea678a8dd7609ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bb791b21fb881fa14d0a4b6e4dafd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a06bb791b21fb881fa14d0a4b6e4dafd3">writeStates</a> (const double &amp;stamp, const <a class="el" href="structVIOState.html">VIOState</a> &amp;xi)</td></tr>
 <tr class="memdesc:a06bb791b21fb881fa14d0a4b6e4dafd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the VIO states to the relevant files.  <a href="classVIOWriter.html#a06bb791b21fb881fa14d0a4b6e4dafd3">More...</a><br /></td></tr>
 <tr class="separator:a06bb791b21fb881fa14d0a4b6e4dafd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,9 +106,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a47b74a0e3cda3869c72aa1763f9ff3f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a47b74a0e3cda3869c72aa1763f9ff3f5">writeTiming</a> (const <a class="el" href="structLoopTimer_1_1LoopTimingData.html">LoopTimer::LoopTimingData</a> &amp;timingData)</td></tr>
 <tr class="memdesc:a47b74a0e3cda3869c72aa1763f9ff3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the system processing time to file.  <a href="classVIOWriter.html#a47b74a0e3cda3869c72aa1763f9ff3f5">More...</a><br /></td></tr>
 <tr class="separator:a47b74a0e3cda3869c72aa1763f9ff3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c089601a6ba03dceed28d2db252733f"><td class="memItemLeft" align="right" valign="top"><a id="a2c089601a6ba03dceed28d2db252733f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writeLandmarkError</b> (const double &amp;stamp, const <a class="el" href="structVIOState.html">VIOState</a> &amp;trueState, const <a class="el" href="structVIOState.html">VIOState</a> &amp;estState)</td></tr>
+<tr class="separator:a2c089601a6ba03dceed28d2db252733f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9879be735eaeca4ca01bdff0c139ae06"><td class="memItemLeft" align="right" valign="top"><a id="a9879be735eaeca4ca01bdff0c139ae06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writeConsistency</b> (const double &amp;stamp, const <a class="el" href="structVIOState.html">VIOState</a> &amp;trueState, const <a class="el" href="structVIO__eqf.html">VIO_eqf</a> &amp;filter)</td></tr>
+<tr class="separator:a9879be735eaeca4ca01bdff0c139ae06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a99bb00e42f700c543a4479c0656c608a"><td class="memItemLeft" align="right" valign="top"><a id="a99bb00e42f700c543a4479c0656c608a"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>outputDir</b></td></tr>
+<tr class="separator:a99bb00e42f700c543a4479c0656c608a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a301f5bec68e64043a533067f5bb8f1a4"><td class="memItemLeft" align="right" valign="top"><a id="a301f5bec68e64043a533067f5bb8f1a4"></a>
 <a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a301f5bec68e64043a533067f5bb8f1a4">IMUStateFile</a></td></tr>
 <tr class="memdesc:a301f5bec68e64043a533067f5bb8f1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording the IMU states. <br /></td></tr>
@@ -125,6 +134,30 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a483e478e375c791faa5a408134f97737">pointsFile</a></td></tr>
 <tr class="memdesc:a483e478e375c791faa5a408134f97737"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording the landmark points. <br /></td></tr>
 <tr class="separator:a483e478e375c791faa5a408134f97737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40ffa58375011d8712047e58eee11467"><td class="memItemLeft" align="right" valign="top"><a id="a40ffa58375011d8712047e58eee11467"></a>
+<a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a40ffa58375011d8712047e58eee11467">landmarkErrorFile</a></td></tr>
+<tr class="memdesc:a40ffa58375011d8712047e58eee11467"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording landmark depth errors. <br /></td></tr>
+<tr class="separator:a40ffa58375011d8712047e58eee11467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf72f3e2bd49dda1c08d37d3db74b922"><td class="memItemLeft" align="right" valign="top"><a id="acf72f3e2bd49dda1c08d37d3db74b922"></a>
+<a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#acf72f3e2bd49dda1c08d37d3db74b922">trueStateFile</a></td></tr>
+<tr class="memdesc:acf72f3e2bd49dda1c08d37d3db74b922"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording the true states (from simulation) <br /></td></tr>
+<tr class="separator:acf72f3e2bd49dda1c08d37d3db74b922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8857c50e812aa660ab1c060a8ad98e"><td class="memItemLeft" align="right" valign="top"><a id="a1c8857c50e812aa660ab1c060a8ad98e"></a>
+<a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a1c8857c50e812aa660ab1c060a8ad98e">neesFile</a></td></tr>
+<tr class="memdesc:a1c8857c50e812aa660ab1c060a8ad98e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording NEES. <br /></td></tr>
+<tr class="separator:a1c8857c50e812aa660ab1c060a8ad98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac0e0f6d15d9c1de2b05ff5197b94618"><td class="memItemLeft" align="right" valign="top"><a id="aac0e0f6d15d9c1de2b05ff5197b94618"></a>
+<a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#aac0e0f6d15d9c1de2b05ff5197b94618">poseConsistencyFile</a></td></tr>
+<tr class="memdesc:aac0e0f6d15d9c1de2b05ff5197b94618"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording pose consistency. <br /></td></tr>
+<tr class="separator:aac0e0f6d15d9c1de2b05ff5197b94618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd998b0b57ba6042eb9bcc15be620a1"><td class="memItemLeft" align="right" valign="top"><a id="a9fd998b0b57ba6042eb9bcc15be620a1"></a>
+<a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a9fd998b0b57ba6042eb9bcc15be620a1">cameraConsistencyFile</a></td></tr>
+<tr class="memdesc:a9fd998b0b57ba6042eb9bcc15be620a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording camera consistency. <br /></td></tr>
+<tr class="separator:a9fd998b0b57ba6042eb9bcc15be620a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af188612d9b4d852151e128099ec2b977"><td class="memItemLeft" align="right" valign="top"><a id="af188612d9b4d852151e128099ec2b977"></a>
+<a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#af188612d9b4d852151e128099ec2b977">biasConsistencyFile</a></td></tr>
+<tr class="memdesc:af188612d9b4d852151e128099ec2b977"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording bias consistency. <br /></td></tr>
+<tr class="separator:af188612d9b4d852151e128099ec2b977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ceeaf1ee5be7534180b13ebb8ba385"><td class="memItemLeft" align="right" valign="top"><a id="a96ceeaf1ee5be7534180b13ebb8ba385"></a>
 <a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a96ceeaf1ee5be7534180b13ebb8ba385">featuresFile</a></td></tr>
 <tr class="memdesc:a96ceeaf1ee5be7534180b13ebb8ba385"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording the image features. <br /></td></tr>
@@ -133,17 +166,13 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="classaofstream.html">aofstream</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#aca9593389b5a25394cabbd12a577f0b4">timingFile</a></td></tr>
 <tr class="memdesc:aca9593389b5a25394cabbd12a577f0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The file for recording processing times. <br /></td></tr>
 <tr class="separator:aca9593389b5a25394cabbd12a577f0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a108788daa0705db6f39413ce8887b93c"><td class="memItemLeft" align="right" valign="top"><a id="a108788daa0705db6f39413ce8887b93c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVIOWriter.html#a108788daa0705db6f39413ce8887b93c">timingFileHeaderIsWritten</a> = false</td></tr>
-<tr class="memdesc:a108788daa0705db6f39413ce8887b93c"><td class="mdescLeft">&#160;</td><td class="mdescRight">True once the header of the timing file is written. <br /></td></tr>
-<tr class="separator:a108788daa0705db6f39413ce8887b93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to handle writing output for the VIO system. </p>
 <p>The output is distributed over a number of files, which are organised in a given directory. The use of aofstream rather than ofstream means that the VIO system usually does not have to slow down or wait for the OS to write to files. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a13e99958d8499fffd6a18650e99c3a89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e99958d8499fffd6a18650e99c3a89">&#9670;&nbsp;</a></span>VIOWriter()</h2>
+<a id="a32409f01c25447ddea678a8dd7609ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32409f01c25447ddea678a8dd7609ac8">&#9670;&nbsp;</a></span>VIOWriter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,7 +180,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">VIOWriter::VIOWriter </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>outputDir</em></td><td>)</td>
           <td></td>
         </tr>
