@@ -1,9 +1,0 @@
-<map id="VIOFilter" name="VIOFilter">
-<area shape="rect" id="node1" title="The implementation of the EqF for VIO." alt="" coords="254,273,331,300"/>
-<area shape="rect" id="node2" href="$structVIO__eqf.html" title="The implementation of the EqF for VIO." alt="" coords="256,184,329,211"/>
-<area shape="rect" id="node3" href="$structEqFCoordinateSuite.html" title="The suite of functions associated with a choice of coordinates for the EqF." alt="" coords="52,95,203,121"/>
-<area shape="rect" id="node4" href="$structCoordinateChart.html" title=" " alt="" coords="5,5,220,32"/>
-<area shape="rect" id="node5" href="$structVIOState.html" title="The states of the VIO system." alt="" coords="253,95,332,121"/>
-<area shape="rect" id="node6" href="$structVIOSensorState.html" title="The states of the sensors of the VIO system." alt="" coords="245,5,367,32"/>
-<area shape="rect" id="node7" href="$structVIOGroup.html" title="The Lie group used for VIO." alt="" coords="356,95,440,121"/>
-</map>

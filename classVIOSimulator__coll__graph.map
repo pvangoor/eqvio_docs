@@ -1,4 +1,0 @@
-<map id="VIOSimulator" name="VIOSimulator">
-<area shape="rect" id="node1" title="A simulator for VIO measurements from a given groundtruth trajectory." alt="" coords="21,95,129,121"/>
-<area shape="rect" id="node2" href="$structVIOFilter_1_1Settings.html" title="The settings of the EqF for VIO." alt="" coords="5,5,144,32"/>
-</map>
